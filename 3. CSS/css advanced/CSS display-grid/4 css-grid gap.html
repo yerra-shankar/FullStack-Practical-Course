@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid gap</title>
+    <style>
+        h1{
+            font-family: lucida calligraphy;
+            font-size: 40px;
+            background: linear-gradient(to right, red,navy);
+            background-clip: text;
+            color: transparent;
+            text-align: center;
+        }
+    
+        .container{
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(3, 1fr);
+            /* three column with equal width */
+
+        }
+
+        .item{
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>example of grid gap</h1>
+    <div class="container">
+        <div class="item">
+            item 1
+        </div>
+        <div class="item">
+            item 2
+        </div>
+        <div class="item">
+            item 3
+        </div>
+        <div class="item">
+            item 4
+        </div>
+        <div class="item">
+            item 5
+        </div>
+        <div class="item">
+            item 6
+        </div>
+    </div>
+</body>
+</html>

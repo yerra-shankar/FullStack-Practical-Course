@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>tables</title>
+</head>
+
+<body>
+    <pre>
+<h1>Tables in html</h1>
+the html tables allow web authors to arrange data like text, images, links, other tables, etc.
+into rows and columns of cells.
+
+The html tables are created using the <mark>table</mark> tag in which the <mark>tr</mark> tag is used to create
+tables rows and <mark>td</mark> tag is used to create data cells .the elements under <mark>td</mark> are regularand left aligned by default.
+<mark>th</mark> is used to tableheading.
+
+
+border is used to increase the tableborder. ex: border = 2 .put into <mark>table</mark> starting tag inside only.
+cellpadding is used to increase the cells sizes. ex: cellpadding= 5. put into <mark>table</mark> starting tag inside only.
+cellspacing is used to ircrease the border space. ex: cellspacing= 8. put into <mark>table</mark> starting tag inside only.
+bordercolor is used to changing the bordercolor of table. ex: bordercolor= "red". put into <mark>table</mark> starting tag inside only.
+bgcolor is used to changing the bgcolor of table. ex: bgcolor="yellow" . put into <mark>table</mark> staring tag inside only.
+height,width is used to increase the table. ex:height=400,width = 400. put into <mark>table</mark> staring tag inside only.
+<mark>caption</mark> is used to caption of tables
+rowspan is changing into one name into num of rows. ex: rowspan = 2. put into <mark>td</mark> starting tag inside only.
+colspan is changing into one name into num of columns.ex: colspan = 3. put into <mark>td</mark> starting tag inside only.
+
+</pre>
+    </br>
+    </br>
+    </br>
+    </br>
+
+    <table border=3 cellpadding=4 cellspacing=8 bordercolor="red" bgcolor="yellow" height=400 width=400>
+        <caption>Tables in html</caption>
+        <tr>
+            <th>student name</th>
+            <th>marks</th>
+            <th>grade</th>
+        </tr>
+        <tr>
+            <td>shankar</td>
+            <td>690</td>
+            <td>first class</td>
+        </tr>
+        <tr>
+            <td rowspan=2>shankar</td>
+            <td>890</td>
+            <td>class first</td>
+        </tr>
+        <tr>
+            <td>890</td>
+            <td>second</td>
+        </tr>
+        <tr>
+            <td colspan=3>shankar</td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>

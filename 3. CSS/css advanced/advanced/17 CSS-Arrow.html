@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow</title>
+    <style>
+        section{
+            border: 2px solid black;
+            background-color: bisque;
+            padding: 30px;
+            margin: 50px;
+        }
+        /*--Top-Arrow-example--*/
+        .tooltip{
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+            cursor: pointer;
+        }
+        .tooltip .tooltiptext{
+            visibility: hidden;
+            width: 320px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            padding: 5px 0;
+            position: absolute;
+            z-index:1;
+            top: 150%;
+            left: 50%;
+            margin-left: -60px;
+            
+
+        }
+        .tooltip .tooltiptext::after{
+            content: "";
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            /* border-color: black; */
+            border-color:  transparent transparent black transparent;
+        }
+        .tooltip:hover .tooltiptext{
+            visibility: visible;
+        }
+
+        /*--Bottom-arrow-example--*/
+        .tooltip1{
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+            cursor: pointer;
+        }
+        .tooltip1 .tooltiptext1{
+            visibility: hidden;
+            width: 320px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 150%;
+            left: 50%;
+            margin-left: -60px;
+        }
+        .tooltip1 .tooltiptext1::after{
+            content:"";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: black transparent transparent transparent;
+        }
+
+        .tooltip1:hover .tooltiptext1{
+            visibility: visible;
+        }
+
+        /*--Left Arrow Example--*/
+
+        .tooltip2{
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px solid black;
+            cursor: pointer;
+        }
+
+        .tooltip2 .tooltiptext2{
+            visibility: hidden;
+            width: 320px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            top: -5px;
+            left: 110%;
+        }
+
+        .tooltip2 .tooltiptext2::after{
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 100%;
+            margin-top: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent black transparent transparent;
+        }
+
+        .tooltip2:hover .tooltiptext2{
+            visibility: visible;
+        }
+
+
+        /*--right arrow example--*/
+        .tooltip3{
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px solid black;
+            cursor: pointer;
+        }
+
+        .tooltip3 .tooltiptext3{
+            visibility: hidden;
+            width: 320px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            top: -5px;
+            right: 110%;
+        }
+
+        .tooltip3 .tooltiptext3::after{
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            margin-top: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent transparent black;
+        }
+
+        .tooltip3:hover .tooltiptext3{
+            visibility: visible;
+        }
+    </style>
+</head>
+<body style="text-align: center; font-family: sans-serif; font-size: 25px;">
+    <section>
+    <h2>Top Arrow Example</h2>
+    <p>Move your mouse cursor over the below heading</p>
+    <div class="tooltip">
+        <strong>Welcome to javaTpoint</strong>
+        <span class="tooltiptext">A solution of all technology </span>
+    </div>
+    </section>
+
+    <section>
+        <h2>Bottom Arrow Example</h2>
+        <p>Move your mouse cursor over the below heading</p>
+        <div class="tooltip1">
+            <strong>Welcome to javaTpoint</strong>
+            <span class="tooltiptext1">A Solution of all technology</span>
+        </div>
+    </section>
+
+    <section>
+        <h2>Left Arrow Example</h2>
+        <p>Move your mouse cursor over the below heading</p>
+        <div class="tooltip2">
+            <strong>Welcome to javaTpoint</strong>
+            <span class="tooltiptext2">A Solution of all technology</span>
+        </div>
+    </section>
+
+
+    <section>
+        <h2>Right Arrow Example</h2>
+        <p>Move your mouse cursor over the below heading</p>
+        <div class="tooltip3">
+            <strong>Welcome to javaTpoint</strong>
+            <span class="tooltiptext3">A Solution of all technology</span>
+        </div>
+    </section>
+
+</body>
+</html>

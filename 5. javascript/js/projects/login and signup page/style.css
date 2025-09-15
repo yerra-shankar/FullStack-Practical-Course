@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #010101;
+
+}
+
+.container{
+    display: flex;
+    width: 800px;
+    height: 500px;
+    background: #1e272e;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #485460;
+}
+
+
+/* Left Side: Welcome Section */
+.welcome-section {
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(135deg, #00d8d6,#4ecdc4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #1e272e;
+    text-align: center;
+    padding: 0 40px;
+}
+
+.welcome-section .welcome{
+    font-size: 36px;
+    margin-bottom: 20px;
+    /* font-weight: bold; */
+    color: #1e272e;
+    animation: bounce 2s infinite ease-in-out;
+}
+
+/* Bouncing Animation */
+@keyframes bounce{
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+.welcome-section p {
+    font-size: 18px;
+    color: #485460;
+}
+
+/* right side: forms */
+.forms-container1 {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.form-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    transition: transform 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #eee;
+}
+
+.form-container input{
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #808e9b;
+    background-color: #485460;
+    color: #eee;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form-container input::placeholder{
+    color: #ddd;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    background: #4ecdc4;
+    border: none;
+    border-radius: 5px;
+    color: #1e272e;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    
+}
+
+.form-container button:hover {
+    background: #00d8d6;
+    box-shadow: 0 0 30px #00d8d6;
+}
+
+.form-container p {
+    text-align: center;
+    margin-top: 20px;
+    color: #ddd;
+}
+
+.form-container p span {
+    color: #4ecdc4;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* swipe animation for forms */
+.login {
+    transform: translateX(0);
+}
+
+.signup {
+    transform: translateX(100%);
+    /* background-color: lightcoral; */
+
+}
+
+.active-login .login{
+    transform: translateX(0);
+}
+
+.active-login .signup {
+    transform: translateX(100%);
+}
+
+.active-signup .login{
+    transform: translateX(-100%);
+}
+
+.active-signup .signup {
+    transform: translateX(0);
+}

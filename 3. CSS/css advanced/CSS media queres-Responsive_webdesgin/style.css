@@ -1,0 +1,59 @@
+body {
+    background-color: teal;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    display: none;
+}
+
+div img {
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: 15px;
+}
+
+/*
+@media (max-width:500px) {
+    body {
+        background-color: limegreen;
+    }
+
+    #mobile h1 {
+        display: block;
+    }
+}
+
+@media (min-width:501px) and (max-width:768px) {
+    body {
+        background-color: orangered;
+    }
+
+    #tablet-screen h1 {
+        display: block;
+    }
+}
+
+@media (min-width:769px) and (max-width:1200px) {
+    body {
+        background-color: blueviolet;
+    }
+
+    #laptop-screen h1 {
+        display: block;
+    }
+}
+
+@media (min-width:1201px) {
+    body {
+        background-color: blue;
+    }
+
+    #wide-screen h1 {
+        display: block;
+    }
+}
+*/

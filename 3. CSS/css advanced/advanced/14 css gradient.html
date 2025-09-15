@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+    <style>
+        
+        div{
+            margin-top: 80px;
+        }
+          /*--example of gradinent and linear gradient (to right)  */
+        .gradient-background{
+            height: 200px;
+            background: linear-gradient(to right,#ff0000, #00ff00);
+            border: 3px solid black;
+            text-align: center;
+            padding: 30px;
+
+        }
+        .gradient-text {  
+            font-size: 30px;  
+            background: linear-gradient(to right, #ff0000, #00ff00);  
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+
+        }
+
+        /*--example 2 on linear gradient (to bottom) */
+        .gradient-example{
+            height: 200px;
+            background: linear-gradient(to bottom, #ff0000,#00ff00);
+            border: 3px solid black;
+            text-align: center;
+            padding: 30px;
+        }
+
+        /*--example 3 on linear gradient (to left) */
+        .gradient-example1{
+            height: 200px;
+            background: linear-gradient(to left, #ff0000, #00ff00);
+            border: 3px solid black;
+            text-align: center;
+            padding: 30px;
+        }
+
+        /*--example of radial Gradient (circle) */
+        .gradient-example2{
+            height: 200px;
+            width: 200px;
+            background: radial-gradient(circle,#ff0000,#00ff00);
+
+        }
+
+        /*--example of radial gradient(circle at center)--*/
+        .gradient-example3{
+            height: 200px;
+            width:200px;
+            background: radial-gradient(circle at center,#ff0000 0%, #00ff00 33.3%, #0000ff 66.6%);
+        }
+
+        /*--example of radial gradient (ellipse closest-side at 50% 50%)--*/
+        .gradient-example4{
+            height: 200px;
+            width: 200px;
+            background: radial-gradient(ellipse closest-side at 50% 50%, #ff0000 20%, #00ff00 50% ,#0000ff 80%);
+        }
+
+        /*--example of repeating linear gradient (top-bottom-right-left)--*/
+        .gradient-example5{
+            height:200px;
+            width: 200px;
+            background: repeating-linear-gradient(to bottom,rgba(231, 52, 20, 0.888),#0000ff 20%);
+        }
+
+        /*--example of repeatinh radial gradient() */
+        .gradient-example6{
+            height: 200px;
+            width: 200px;
+            background: repeating-radial-gradient(circle , #ff0000,#0000ff 20%);
+        }
+
+        /*--eexample of Coinc gradient--*/
+        .gradient-example7{
+            height: 200px;
+            width: 200px;
+            background: conic-gradient(from 45deg,red,yellow,lime,aqua,blue,magenta,red);
+        }
+    </style>
+</head>
+<body>
+    <h1 class="gradient-text">Hello, CSS Gradient!</h1>
+    <div class="gradient-background">
+        <h1>example of gradient and linear gradient(to right)</h1>
+    </div>
+    <div class="gradient-example">
+        <h1>example 2 on linear gradient(to bottom)</h1>
+    </div>
+    <div class="gradient-example1">
+        <h1>example 3 on linear gradient (to left)</h1>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 class="gradient-text">Radial Gradient</h1>
+    <div class="gradient-example2"></div>
+    <h1>example of radial gradient (circle)</h1>
+    <div class="gradient-example3"></div>
+    <h1>example of radial gradient(circle at center)</h1>
+    <div class="gradient-example4"></div>
+    <h1>example of radial gradient(ellipse closest-side at 50% 50%)</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 class="gradient-text">repeating-linear-gradient</h1>
+    <div class="gradient-example5"></div>
+    <h1>example of repeating-linear-gradient</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 class="gradient-text">repeating-radial-gradient</h1>
+    <div class="gradient-example6"></div>
+    <h1>example of repeating-radial-gradient</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 class="gradient-text">Coinc-gradient</h1>
+    <div class="gradient-example7"></div>
+    <h1>example of coinc-gradient</h1>
+</body>
+</html>

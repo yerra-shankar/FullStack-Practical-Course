@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        body{
+            height: 1400px;
+        }
+        section{
+            border: 3px solid black;
+            background-color: beige;
+            box-shadow: 0 0 20px black;
+            margin-top: 150px;
+            padding: 50px;
+        }
+
+        /*---css animation and their properties---*/
+        .element{
+            height: 200px;
+            width: 200px;
+            background: #0071ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: sans-serif;
+            font-weight: 700;
+            font-size: 1.35rem;
+            color: white;
+            margin:  auto;
+
+            animation-duration: 3s;
+            animation-name: spin;
+            animation-timing-function:ease-in-out;
+            animation-delay: 1s;
+            animation-iteration-count: 1;   /*--numbers or infinite--*/
+            animation-direction: normal;           /*--normal ,reverse and alternate--*/
+            /*animation-fill-mode: forwards;  
+            animation-play-state: running; */       /*---running or paused--*/
+
+            /*----one line code---
+               animation: 3s spin ease-in-out 1s 1 normal forward;   */
+        }   
+        /*.element:hover{
+            animation-play-state: paused;}*/       /*--paused or running--*/
+            
+        
+        @keyframes spin{
+            0%{
+
+            }
+            50%{
+                scale: 2;
+                transform: rotate(0);
+                border-radius: 0;
+                
+            }
+            100%{
+                transform: rotate(360deg);
+                border-radius: 50%;
+                scale: 2;
+            }
+        }
+
+
+        /*--background color animation (from---to)----*/
+        .animation{
+            width: 100px;
+            height: 100px;
+            background: red;
+            -webkit-animation: myfirst 6s;
+            animation: myfirst 5s 1s;
+        }
+        @-webkit-keyframes myfirst{
+            from {background: red;}
+            to {background: green;}
+        }
+        @keyframes myfirst{
+            from {background: red;}
+            to {background: green;}
+        }
+
+
+
+        /*-css animation example: Moving Rectangle--*/
+
+        .rectangle{
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+            /* -webkit-animation: mysecond 5s ; */
+            animation: mysecond 5s ;
+        }
+        /* @-webkit-keyframes mysecond{
+            0% {background: red; left:0px; top:0px;}
+            25% {background:yellow; left:300px; top:0px;}
+            50% {background: blue;left: 200px; top: 300px;}
+            75% {background: green; left: 0px; top: 200px;}
+            100% {background:red;left: 0px; top: 0px;}
+        } */
+        @keyframes mysecond{
+            0% {background:red; left:0px; top:0px;}
+            25% {background:yellow; left:300px; top:0px;}
+            50% {background: blue; left: 300px; top: 200px;}
+            75% {background: green; left: 0px; top: 200px;}
+            100% {background: red; left: 0px; top: 0px;}
+        }
+        
+
+
+        /* keyframes rules */
+
+        .div{
+            width: 200px;
+            height: 200px;
+            animation: demo 5s ease-in infinite, trans 5s ease-in-out infinite;
+            border-radius: 40px;
+        }
+
+        @keyframes demo{
+            0%{background-color: red;}
+            50%{background-color: yellow; width: 100px; height: 100px;}
+            100%{background-color: green; width: 300px; height: 300px;}
+        }
+
+        @keyframes trans{
+            0%{transform: translate(0px) scale(1.4) rotate(80deg);}
+            50%{transform: translate(250px) scale(1.2) rotate(40deg);}
+            100%{transform:translate(350px) scale(1) rotate(0deg)}
+        }
+
+
+        /* example2 */
+        h1{
+            color: black;
+            text-align: center;
+        }
+        .div1{
+            position: relative;
+            animation: jtp 7s infinite;
+        }
+
+        @keyframes jtp{
+            0%{top: 500px; width: 0px; font-size: 10px; transform: translate(0px) scale(1.4) rotate(80deg);}
+            25%{top: 400px; background: yellow;font-size: 20px;width: 50px; transform: translate(100px) scale(1.3) rotate(60deg);}
+            50%{top: 300px; background: orange; font-size: 30px;width: 150px; transform: translate(200px) scale(1.2) rotate(40deg);}
+            75%{top: 200px; background: pink; width: 250px; font-size: 40px; transform: translate(300px) scale(1.1) rotate(20deg);}
+            100%{top: 100px; background: red; width: 500px; font-size: 50px; transform: translate(400px) scale(1) rotate(0deg);}
+        }
+    </style>
+</head>
+<body>
+    <section>
+    <div class="element">
+        <b>css animation</b>
+    </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section>
+    <p><b>Note:
+    </b>The ie 9 and earlier versions don't support CSS3 animation pro perty.</p>
+    <div class="animation"></div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--CSS animation example: Moving Rectangle-->
+        <h2>CSS animation example: Moving rectangle</h2>
+        <p><b>note:
+        </b> The internet Explorer 9 and it s earlier versions don't Support this example.</p>
+        <div class="rectangle"></div>
+
+    <br>
+    <br>
+    <br>
+    <section>
+        <div class="div"></div>
+        <p>After the completion of the Animation the element retracts to its original State</p>
+    </section>
+    <br>
+    <br>
+    <br>
+    <section>
+        <div class="div1">
+            <h1>javaTpoint</h1>
+        </div>
+    </section>
+</body>
+</html>

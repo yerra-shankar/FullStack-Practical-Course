@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+        <title>css theory</title>
+</head>
+
+<body bgcolor="skyblue">
+        <marquee scrollamount="7" direction="right" bgcolor="white"><b>CSS THEORY</b></marquee>
+        <fieldset>
+                <h1><marK><u>CSS :</u></marK></h1>
+                <ol>
+                        <lI>CSS stands for cascading style sheet.</lI>
+                        <li>CSS is used to design html tags.</li>
+                        <li>CSS is a widely used language on the web.</li>
+                        <li>Html, CSS and javascript are used for web designing. it helps the web designers to apply
+                                style on
+                                html tags.</li>
+                </ol>
+                <h2><u><mark>USES OF CSS :</mark></u></h2>
+                <dl>
+                        <ul>
+                                <dt>
+                                        <li><b>Solve a big problem</b></li>
+                                </dt>
+                        </ul>
+                        <dd> Before CSS, tags like font, color, background style, elements, border, and size had to be
+                                repeated
+                                on every web page. This was a very long process.</dd>
+                </dl>
+                <dl>
+                        <ul>
+                                <dt>
+                                        <li><b>Saves a lot of time</b></li>
+                                </dt>
+                        </ul>
+                        <dd>CSS style definitions are saved in external CSS files, so it is possible to change the
+                                entire
+                                website by changing just one file.</dd>
+                </dl>
+                <dl>
+                        <ul>
+                                <dt>
+                                        <li><b>provied more attributes</b></li>
+                                </dt>
+                        </ul>
+                        <dd> CSS provides more detailed attributes than plain HTML to define the look and feel of the
+                                websites.
+                        </dd>
+                </dl>
+                <dl>
+                        <ul>
+                                <dt>
+                                        <li><b>pages load faster</b></li>
+                                </dt>
+                        </ul>
+                        <dd>CSS does not requrie the writing of HTML tag attributes every time. There is the writing of
+                                rule
+                                just once for a tag, which can be applied to all the occurrences of the corresponding
+                                tag. So
+                                using CSS, there is less code, which means faster downloading.</dd>
+                </dl>
+                <dl>
+                        <ul>
+                                <dt>
+                                        <li><b>CSS Syntax</b></li>
+                                </dt>
+                        </ul>
+                        <dd>A CSS rule set contains a selector and a declaration block.</dd>
+                        <pre><fieldset >
+                selector     declartion blog
+                   \           /      
+             <mark> h1{color:blue;font-size:11px;}</mark>
+                       /        |
+                property    value   </fieldset>    </pre>
+                </dl>
+        </fieldset>
+        <br />
+        <fieldset>
+                <h2><mark><u>Types of CSS:</u></mark></h2>
+                <dl>
+                        <ul>
+                                <dt>
+                                        <li><b>There are three of css which are given below:</b></li>
+                                </dt>
+                        </ul>
+                        <ol>
+                                <li>inline CSS.</li>
+                                <li>internal or embedded CSS.</li>
+                                <li>External CSS.</li>
+                        </ol>
+                </dl>
+                <dl>
+                        <ul>
+                                <dt>
+                                        <li><b>Inline CSS:</b></li>
+                                </dt>
+                        </ul>
+                        <dd>Inline CSS contains the CSS property in the body section attached with element is known as
+                                inline
+                                CSS. this kind of style is specified within an html tag using the style attribute.</dd>
+                </dl>
+                <dl>
+                        <ul>
+                                <dt>
+                                        <li><b>Internal or embedded CSS :</b></li>
+                                </dt>
+                        </ul>
+                        <dd>This can be used when a single Html document must be styled uniquely.This CSS rule set
+                                should be
+                                within the html file in the head section i.e the CSS is embedded within the html file.
+                        </dd>
+                </dl>
+                <dl>
+                        <ul>
+                                <dt>
+                                        <li><b>external CSS</b></li>
+                                </dt>
+                        </ul>
+                        <dd>External CSS contains separate CSS file which contains only style property with the help of
+                                tag
+                                attributes(for example class , id, heading,....etc). CSS property written in a separate
+                                file
+                                with .CSS extension and should be linked to the HTML document using link tag.</dd>
+                        <pre>       <fieldset>
+                <mark>link rel="styesheet" href="path of css"</mark>
+             </fieldset></pre>
+                </dl>
+        </fieldset>
+        <br/>
+        <fieldset>
+                <h1><mark><u>comments in CSS :</u></mark></h1>
+                <ul>
+                        <li>CSS comments are written between /*and*/</li>
+                </ul>
+                <fieldset>/* This is a CSS comment*/</fieldset>
+        </fieldset>
+        <br />
+        <fieldset>
+                <h2><mark><u>CSS Colors:</u></mark></h2>
+                <ul type="square">
+                        <li>The color property in CSS is used to set the color of HTML elements. Typically, this
+                                property is
+                                used to set the background color or the font color of an element.</li>
+                        <li>In CSS we use color values for specifying the color. We can also use this property for the
+                                border-color and other decorative effects.</li>
+                </ul>
+                <ul>
+                        <li><b>We can define the color of an element by using the following ways:</b></li>
+                </ul>
+                <Ol>
+                        <li>Built-in color.</li>
+                        <li>Hexadecimal notation.</li>
+                        <li>RGB format.</li>
+                        <li>RGBA format.</li>
+                        <li>HSL.</li>
+                        <li>HSLA.</li>
+                </Ol>
+                <dl>
+                        <ul>
+                                <li>
+                                        <dt><b>Built-in Color:</b></dt>
+                                </li>
+                        </ul>
+                        <dd>As its name implies, built-in color means the collection of previously defined colors that
+                                are used
+                                by using a name such as red,blue,green,etc.</dd>
+                        <pre><fieldset>
+        <b>Syntax:</b>
+                Color:Color-name;
+        </fieldset>
+</pre>
+                </dl>
+                <dl>
+                        <ul>
+                                <li>
+                                        <dt><b>Hexadecimal notation:</b></dt>
+                                </li>
+                        </ul>
+                        <dd>Hexadecimal can be defined as a six-digit color representation.This notation starts with the
+                                <mark>#
+                                        symbol</mark> followed by six characters ranges from<mark> 0 to f.</mark> In
+                                this, the
+                                first two digits represent the red(RR) color value, the next two digits represent the
+                                green (GG)
+                                color value, and the last two digits represent the blue(BB) color value.
+                        </dd>
+                        <dd>The black color notation in hexadecimal is #000000,and the white color notation in
+                                hexadecimal is
+                                #FFFFFF.</dd>
+                </dl>
+                <br />
+                <dl>
+                        <ul>
+                                <li>
+                                        <dt><b>RGB Format:</b></dt>
+                                </li>
+                        </ul>
+                        <dd>RGB Format is the short form of 'RED GREEN and BLUE' that is used for defining the color of
+                                an HTML
+                                element simply by specifying the values of R,G,B that are in range of 0 to 255.</dd>
+                        <dd>The color values in this format are specified by using the rgb() property. this property
+                                allows
+                                three values that can either be in percentage or integer(range from 0 to 255)</dd>
+                        <pre><fieldset>
+        <b>Syntax:</b>
+                color:rgb(R,G,B):
+        </fieldset>
+</pre>
+                </dl>
+                <br />
+                <dl>
+                        <ul>
+                                <li>
+                                        <dt><b>RGBA Format:</b></dt>
+                                </li>
+                        </ul>
+                        <dd>It is almost similar ta RGB format except that RGBA contains A (Alpha) that specifies that
+                                elements
+                                transparency.The value of alpha is in the range 0.0 to 1.0, in which 0.0 is for fully
+                                transparent.</dd>
+                        <pre><fieldset>
+        <b>Syntax:</b>
+               color:rgba(R,G,B,A):
+        </fieldset>
+</pre>
+                </dl>
+                <br />
+                <dl>
+                        <ul>
+                                <li>
+                                        <dt><b>HSL:</b></dt>
+                                </li>
+                        </ul>
+                        <dd>It is a short form of <b>Hue, saturation, and Lightness.</b> Let's understand them
+                                individually.
+                        </dd> <br />
+                        <dd><b>Hue:</b> it can be defined as the degree on the color wheel from 0 to 360. 0 represents
+                                red, 120
+                                represents green, 240 represent blue.</dd>
+                        <dd><b>Saturation:</b> it takes value in percentage in which 100% represents fully saturated,
+                                i.e., no
+                                shades of gray.</dd>
+                        <dd><b>Lightness:</b> The lightness of the color can be defined as the light that we want to
+                                provide the
+                                color in which 0% represents black (there is no light),50% represents neither dark nor
+                                light,
+                                and 100% represents white (full ligtness).</dd>
+                        <pre><fieldset>
+        <b>Syntax:</b>
+                 color:hsl(H,S,L);
+                </fieldset>
+</pre>
+                </dl>
+                <br />
+                <dl>
+                        <ul>
+                                <lI>
+                                        <dt><b>HSLA:</b></dt>
+                                </lI>
+                        </ul>
+                        <dd>It is entirely similar to HSL property, except that it contains A (alpha) that specifies the
+                                elements transparency. The value of alpha is in the range 0.0 to 1.0 in which 0.0
+                                indicates
+                                fully transparent, and 1.0 indicates, not transparent.</dd>
+                        <pre><fieldset>
+        <b>Syntax:</b>
+                color:hsla(H,S,L,A);
+                </fieldset>
+</pre>
+                </dl>
+        </fieldset>
+        <br />
+        <fieldset>
+                <h2><mark><u>CSS Selector:</u></mark></h2>
+                <ul type="square">
+                        <li>CSS selectors are used to select the content you want to style. selector are the part of CSS
+                                rule set. CSS selectors select HTML elements according to its id,class,type,attributes
+                                etc.</li>
+                        <br />
+                        <br />
+                        <li><b>There are several different types of selectors in CSS.</b></li>
+                </ul>
+                <ol>
+                        <li>CSS Element Selector</li>
+                        <li>CSS id selector</li>
+                        <li>CSS class selector</li>
+                        <li>CSS Universal selector</li>
+                        <li>CSS Group Selector</li>
+                </ol>
+                <dl>
+                        <ul>
+                                <dt>
+                                        <Li><b>CSS Element Selector:</b></Li>
+                                </dt>
+                        </ul>
+                        <dd>The element selector selects Html elements based on the element name (or tag) for example p,
+                                h1, div, span, etc.</dd>
+                        <dd>style.CSS: the following code is used in the above html code.You can see the CSS rules
+                                applied to all<mark> p tags and h1 tags.</mark></dd>
+                </dl>
+                <br />
+                <dl>
+                        <ul>
+                                <dt>
+                                        <li><b>CSS Id Selector:</b></li>
+                                </dt>
+                        </ul>
+                        <dd>the id selector slects the Id attributes of an HTML element to select a specific element. An
+                                Id is always unique within the page so it is choosen to select a single, unique element.
+                        </dd>
+                        <dd>It is written with the <mark>hash character(#),</mark> followed by the id of the element.
+                        </dd>
+                </dl>
+                <br />
+                <dl>
+                        <ul>
+                                <dt>
+                                        <li><b>Class-selector:</b></li>
+                                </dt>
+                        </ul>
+                        <dd>The class selector selects HTML elements with a specific class attributes.</dd>
+                        <dd>style.css: To use class selector you must use<mark>( . )</mark> followed by class name in
+                                CSS. This rule will be applied to the HTML element with the class attribute
+                                "paragraph-class"</dd>
+                </dl>
+                <br />
+                <dl>
+                        <Ul>
+                                <dt>
+                                        <li><b>Universal-selector:</b></li>
+                                </dt>
+                        </Ul>
+                        <dd>The Universal selector <mark>( * )</mark> in CSS is used to select all the elements in a
+                                HTMl document. it also includes other elements which are inside under another element.
+                        </dd>
+                </dl>
+                <br />
+                <dl>
+                        <ul>
+                                <dt>
+                                        <li><b>Group-selector:</b></li>
+                                </dt>
+                        </ul>
+                        <dd>The selector is used to style all comma separated elements with the same style.</dd>
+                        <dd>style.css:Suppose you want to apply common style to different selectors, instead of writing
+                                rules separetely you can write them in groups as shown below.</dd>
+                </dl>
+        </fieldset>
+        <br />
+        <br />
+        <fieldset>
+                <h1><mark><b><u>shift + alt + f = its used to prettify the code</u></b></mark></h1>
+        </fieldset>
+        <br />
+        <br />
+        <fieldset>
+                <h2><mark><u>CSS Background :</u></mark></h2>
+                <ul type="square">
+                        <li>CSS background property is used to define the background effects on element.There are 5 CSS
+                                background properties that affects the Html elements:</li>
+                </ul>
+                <ol>
+                        <li>background-color</li>
+                        <li>background-image</li>
+                        <li>background-repeat</li>
+                        <li>background-attachment</li>
+                        <li>background-position</li>
+                </ol>
+                <dl>
+                        <ul>
+                                <dt>
+                                        <li><b>CSS background-color</b></li>
+                                </dt>
+                        </ul>
+                        <dd>The background-color property is used to specify the background color of the element.</dd>
+                        <pre><fieldset>
+         we can use like this:
+                Background-color:color name
+                </fieldset>
+                        </pre>
+                </dl>
+                <dl>
+                        <ul>
+                                <dt>
+                                        <li><b>CSS Background-image:</b></li>
+                                </dt>
+                        </ul>
+                        <dd>The background-image property is used to set an image as a background of an element. By
+                                default the image covers the entire element.you can set the background image for s page
+                                like this</dd>
+                        <pre><fieldset>
+        We can use :
+                Background-image:url("path of image")
+
+                        </fieldset>
+
+                        </pre>
+                </dl>
+                <dl>
+                        <ul>
+                                <dt>
+                                        <li><b>CSS background-repeat:</b></li>
+                                </dt>
+                        </ul>
+                        <dd>By default, the background-image property repeats the background image horizontally and
+                                vertically. Some images are repeated only horizontally or vertically.</dd>
+                        <pre><fieldset>
+        At that time we use this :
+                Background-repeat:no-repeat
+                        </fieldset>
+
+                        </pre>
+                </dl>
+                <dl>
+                        <ul>
+                                <dt>
+                                        <li><b>CSS background-attachment:</b></li>
+                                </dt>
+                        </ul>
+                        <dd>The background-attachment property is used to specify if the background image is <mark>fixed
+                                        or scroll</mark> with the rest of the page in browser window. if you set fixed
+                                the background image then the image will not move during scrolling in the browser.</dd>
+                </dl>
+                <dl>
+                        <ul>
+                                <dt>
+                                        <li><b>CSS Background-position:</b></li>
+                                </dt>
+                        </ul>
+                        <dd>The background-position property is used to define the initial position of the background
+                                image. By default, the background image is placed on the top-left of the webpage.</dd>
+                        <dd>you can set the following position:</dd>
+                        <ol>
+                                <li>center</li>
+                                <li>top</li>
+                                <li>bottom</li>
+                                <li>left</li>
+                                <li>right</li>
+                        </ol>
+                </dl>
+                <pre><fieldset>
+        There are two types of using Css background style:
+
+
+                   body {background-color: aquamarine;
+                        color: black;
+                        background-image: url("D:\\shankarphotos\\vecteezy_ai-Dsshankarphotos.jpg");
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-attachment: fixed;
+                        }    
+                               or
+
+                   body {background: aqumarine url("D:\\shankarphotos\\vecteezy_ai-Dsshankarphotos.jpg") no-repeat center fixed;}
+                </fieldset> </pre>
+        </fieldset>
+        <br />
+        <fieldset>
+                <h1><mark><u>CSS Border:</u></mark></h1>
+                <ul>
+                        <li>The CSS border propeties are use to specify the style, color and size of the border of an
+                                element.</li>
+                        <li> The CSS Border properties are given below</li>
+                </ul>
+                <ol>
+                        <li>border-style</li>
+                        <li>border-color</li>
+                        <li>border-width</li>
+                        <li>border-radius</li>
+                </ol>
+                <dl>
+                        <Ul>
+                                <dt>
+                                        <li>
+                                                <h3>CSS border-style:</h3>
+                                        </li>
+                                </dt>
+                        </Ul>
+                        <dd>The Border style property is used to specifiy the border type which ypu want to display on
+                                the web page.</dd>
+
+                        <dd>There are different types CSS border-styles:</dd>
+
+                        <br />
+                        <table border="5" cellpadding="5" cellspacing="4" bgcolor="bisque">
+                                <tr>
+                                        <th colspan="9">Border-style:</th>
+                                </tr>
+                                <tr>
+                                        <td>none</td>
+                                        <td>dotted</td>
+                                        <td>dashed</td>
+                                        <td>solid</td>
+                                        <td>double</td>
+                                        <td>groove</td>
+                                        <td>ridge</td>
+                                        <td>inset</td>
+                                        <td>outset</td>
+                                </tr>
+                        </table>
+                        <br />
+                        <table border="5" cellpadding="5" cellspacing="4" bgcolor="bisque">
+                                <tr>
+                                        <th colspan="4">We can apply the border styles individually:</th>
+                                </tr>
+                                <tr>
+                                        <td>Border-top-style</td>
+                                        <td>Border-right-style</td>
+                                        <td>Border-bottom-style</td>
+                                        <td>Border-left-style</td>
+                                </tr>
+                        </table>
+                </dl>
+                <br />
+                <br />
+                <dl>
+                        <ul>
+                                <dt>
+                                        <li>
+                                                <h3>CSS border-color</h3>
+                                        </li>
+                                </dt>
+                        </ul>
+                        <dd>There are different methods to set the color of the border.</dd>
+                        <ol>
+                                <li>Name: it specifies the color name. for example: "red".</li>
+                                <li>RGB: it specifies the Rgb value of the color. for example: "rgb(255,0,0)"</li>
+                                <li>Hex: it specifies the hex value of the color. for example: #ff0000</li>
+                                <li>HSL: it specifies the RGB value of the color. for example: "hsl(300,50%,50%)"</li>
+                        </ol>
+                </dl>
+                <br />
+                <dl>
+                        <ul>
+                                <dt>
+                                        <li>
+                                                <h3>CSS border-width:</h3>
+                                        </li>
+                                </dt>
+                        </ul>
+                        <dd>The border-width property is used to set the border's width. it is set in
+                                <mark>pixels</mark>. you can also use the one of the three predefined values, thin,
+                                medium or thick to set the width of the border. </dd>
+                </dl>
+                <br />
+                <dl>
+                        <ul>
+                                <dt>
+                                        <li>
+                                                <h3>CSS border-radius:</h3>
+                                        </li>
+                                </dt>
+                        </ul>
+                        <dd>This CSS property sets the rounded borders and provides the <mark>rounded corners</mark>
+                                around an element, tags, or div. it defines the radius of the corners of an element.
+                        </dd>
+                </dl>
+        </fieldset>
+        <br />
+        <fieldset>
+                <h2><mark><u>CSS-Margins:</u></mark></h2>
+                <ul>
+                        <li>CSS Margin property is used to define the space around elements. it is completely
+                                transparent and doesn't have any background color. it clears an area around the element.
+                        </li>
+                        <li>Top, bottom, left and right margin can be changed independently using separate properties.
+                                you can also change all properties at once by using shorthand margin property.</li>
+                </ul>
+                <ol>
+                        <li>The margin-bottom specifies the bottom margin of an element.</li>
+                        <li>The margin-top specifies the top margin of an element.</li>
+                        <li>The margin-left specifies the left margin of an element.</li>
+                        <li>The margin-right specifies the right margin of an element.</li>
+                </ol>
+                <dl>
+                        <ul>
+                                <dt>
+                                        <li>
+                                                <h3>Margin: Shorthand Property:</h3>
+                                        </li>
+                                </dt>
+                        </ul>
+                        <dd>CSS shorthand property is used to shorten the code. it specifies all the margin properties
+                                in one property.</dd>
+                        <dd>There are four types to specify the margin property. you can use one of them.</dd>
+
+                </dl>
+                <ol>
+                        <li>margin: 50px 100px 150px 200px;</li>
+                        <li>margin: 55px 100px 150px;</li>
+                        <li>margin: 50px 100px;</li>
+                        <li>margin: 50px;</li>
+                </ol>
+        </fieldset>
+        <br />
+        <fieldset>
+                <h2><mark><u>CSS padding:</u></mark></h2>
+                <ul type="square">
+                        <li>CSS padding property is used to define the space between the element content and the element
+                                border.</li>
+                        <li>It is different from CSS margin in the way that CSS margin defines the space around element.
+                                CSS padding is affected by the background colors. it clears an area around the content.
+                        </li>
+                        <li>Top, bottom, left, and right padding can be changed independently using separate properties.
+                                you can also change all properties at once by using shorthand padding property.</li>
+                </ul>
+                <h2><u>CSS Padding properties</u></h2>
+                <dl>
+                        <ul>
+                                <dt>
+                                        <li><b>padding:</b></li>
+                                </dt>
+                                <dd>it is used to set all the padding properties in one declaration.</dd>
+                                <dt>
+                                        <li><b>padding-left:</b></li>
+                                </dt>
+                                <dd>it is used to set left padding of an element.</dd>
+                                <dt>
+                                        <li><b>padding-right:</b></li>
+                                </dt>
+                                <dd>it is used to set right padding of an element.</dd>
+                                <dt>
+                                        <li><b>padding-top:</b></li>
+                                </dt>
+                                <dd>it is used to set top padding of an element.</dd>
+                                <dt>
+                                        <li><b>padding-bottom:</b></li>
+                                </dt>
+                                <dd>it is used to set bottom padding of an element.</dd>
+                        </ul>
+                </dl>
+        </fieldset>
+        <br />
+        <fieldset>
+                <h1><mark><u>CSS Font:</u></mark></h1>
+                <ul type="square">
+                        <li>CSS font property is used to control the look of texts. By the use of CSS font property you
+                                can change the text size,style and more. you have already studied how to make text bold
+                                or underlined.</li>
+                        <br />
+                        <li><b>these are some important font attributes:</b></li>
+                </ul>
+                <ol>
+                        <li>CSS Font-family</li>
+                        <li>CSS Font-size</li>
+                        <li>CSS Font-style</li>
+                        <li>CSS Font-weight</li>
+                </ol>
+                <dl>
+                        <ul>
+                                <dt>
+                                        <li><b><u>CSS Font Family:</u></b></li>
+                                </dt>
+                                <dd>CSS font family can be divided in two types:</dd>
+                        </ul>
+                        <ol>
+                                <li><b>Generic family:</b>it includes serif,sans-serif,and monospace.</li>
+                                <li><b>Font family:</b>it specifies the font family name like Arial, New times Roman
+                                        etc.</li>
+                        </ol>
+                </dl>
+                <dl>
+                        <ul>
+                                <dt>
+                                        <li><b><u>CSS Font Size:</u></b></li>
+                                </dt>
+                                <dd>CSS font size property is used to change the size of the font.</dd>
+                        </ul>
+                </dl>
+                <dl>
+                        <ul>
+                                <dt>
+                                        <li><b><u>CSS Font style:</u></b></li>
+                                </dt>
+                                <dd>CSS Font style property defines what type of font you want to display. it may be
+                                        italic, oblique, or normal.</dd>
+                        </ul>
+                </dl>
+                <dl>
+                        <ul>
+                                <dt>
+                                        <li><b><u>CSS Font Weight:</u></b></li>
+                                </dt>
+                                <dd>CSS font weight property defines the weight of the font and specify that how bold a
+                                        font is. The possible values of font Weight may be normal, bold, bolder, lighter
+                                        or number(100,200.....upto 900).</dd>
+                        </ul>
+                </dl>
+        </fieldset>
+        <br />
+        <fieldset>
+                <h1><mark><u>CSS Links:</u></mark></h1>
+                <ul>
+                        <li>Link is a connection from one web page to another web pages. CSS property can be used to
+                                style the links in various different ways.</li>
+                        <li><b>States of link:</b>Before discussing CSS properties, it is important to know the states
+                                of a link.</li>
+                        <br />
+                        <li>There are four state of links given below:</li>
+                </ul>
+                <ol>
+                        <li>a:link => This is a normal, unvisited link.</li>
+                        <li>a:visited => This is a link visited by user at least once.</li>
+                        <li>a:hover => This is a link when mouse hovers over it.</li>
+                        <li>a:active => This is a link which is just clicked.</li>
+                </ol>
+                <dl>
+                        <ul>
+                                <dt>
+                                        <li>
+                                                <h3>CSS properties of links:</h3>
+                                        </li>
+                                </dt>
+                        </ul>
+                        <dd>Some basic CSS properties of links are given below</dd>
+                        <ol>
+                                <li>Color</li>
+                                <li>Text-decoration</li>
+                                <li>Background-color</li>
+                        </ol>
+                        <ul>
+                                <dt>
+                                        <li><b>Color:</b></li>
+                                </dt>
+                                <dd>This CSS property is used to change the color of link text.</dd>
+                                <dt>
+                                        <li><b>Text-Decoration:</b></li>
+                                </dt>
+                                <dd>this property is basically used to remove/add underlines from/to a link.</dd>
+                                <dt>
+                                        <li><b>Background-color:</b></li>
+                                </dt>
+                                <dd>This property is used to set the background color of link.</dd>
+                        </ul>
+                </dl>
+        </fieldset>
+        <br />
+        <fieldset>
+                <h2><mark><u>Float Property:</u></mark></h2>
+                <ul>
+                        <li>The float property in CSS is used to specify the horizontal alignment of an element within
+                                its parent container. When an element is floated, it is removed from the normal flow of
+                                the document and shifted to the left or right of its parent container. The elements that
+                                follow the floated element will flow around it, unless otherwise specified.</li>
+                                <br/>
+                        <li>The float property can be set to one of the following values:</li>
+                </ul>
+                <ol>
+                        <li><b>left:</b> The element will be floated to the left of its parent container.</li>
+                        <li><b>right:</b> The element will be floated to the right of its parent container.</li>
+                        <li><b>none:</b> The element will not float and will remain in the normal flow of the document.</li>
+                        <li><b>inherit:</b> The value of the float property will be inherited from the parent element.</li>
+                </ol>
+
+
+
+
+
+
+        </fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagination</title>
+    <style>
+        h1{
+            font-family: Arial, sans-serif;
+            font-size: 35px;
+            text-align: center;
+
+        }
+        section{
+            font-family: Arial,  sans-serif;
+            font-size: 18px;
+            border: 2px solid black;
+            background-color: beige;
+            
+            padding: 30px;
+            margin: 50px;
+        }
+        /* basic pagination */
+        ul.pagination{
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+        }
+
+        Ul.pagination li {display: inline;}
+
+        Ul.pagination li a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        /* basic pagination with arrow */
+        ul.pagination1{
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul.pagination1 li {display: inline;}
+
+        ul.pagination1 li a{
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        /* active/current link and hoverable pagination */
+        Ul.pagination2 {
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul.pagination2 li{
+            display: inline;
+        }
+
+        ul.pagination2 li a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        ul.pagination2 li a.active{
+            background-color: brown;
+            color: white;
+        }
+
+        ul.pagination2 li a:hover:not(.active){
+            background-color: lightpink;
+        }
+
+        /* Rounded Active and Hoverable pagination */
+        ul.pagination3{
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+        }
+        ul.pagination3 li {
+            display: inline;
+        }
+        ul.pagination3 li a{
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 45px;
+        }
+
+        ul.pagination3 li a.active{
+            background-color: brown;
+            color: white;
+            border-radius: 45px;
+        }
+
+        ul.pagination3 li a:hover:not(.active)  {
+            background-color: lightpink;
+        }
+
+        /* Bordered pagination */
+        ul.pagination4 {
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul.pagination4 li {
+            display: inline;
+        }
+
+        ul.pagination4 li a{
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            border: 1px solid black;
+        }
+
+        ul.pagination4 li a.active{
+            background-color: brown;
+            color: white;
+            border: 1px solid grey;
+        }
+
+        ul.pagination4 li a:hover:not(.active) {
+            background-color: lightpink;
+        }
+
+        /* rounded bordered pagination */
+        ul.pagination5{
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+        }
+        ul.pagination5 li{
+            display: inline;
+        }
+        ul.pagination5 li a{
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            border: 1px solid black;
+            
+        }
+
+        .pagination5 li:first-child a{
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+
+        .pagination5 li:last-child a {
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        ul.pagination5 li a.active{
+            background-color: brown;
+            color: white;
+            border: 1px solid grey;
+        }
+
+        ul.pagination5 li a:hover:not(.active)   {
+            background-color: lightpink;
+        }
+
+        /*--space betwwen pagination--*/
+
+        ul.pagination6{
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul.pagination6 li{
+            display: inline;
+        }
+
+        ul.pagination6 li a{
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            border: 1px solid black;
+            margin: 0 10px;
+
+        }
+
+        ul.pagination6 li a.active{
+            background-color: brown;
+            color: white;
+            border: 1px solid grey;
+        }
+
+        ul.pagination6 li a:hover:not(.active)  {
+            background-color: lightpink;
+        }
+
+        /* pagination Size */
+
+        ul.pagination7{
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul.pagination7 li{
+            display: inline;
+        }
+
+        ul.pagination7 li a{
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            border: 1px solid black;
+            font-size: 42px;
+        }
+
+        ul.pagination7 li a.active{
+            background-color: brown;
+            color: white;
+            border: 1px solid black;
+        }
+
+        ul.pagination7 li a:hover:not(.active)  {
+            background-color: lightpink;
+        }
+
+        /* Centered pagination */
+        ul.pagination8{
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul.pagination8 li{
+            display: inline;
+        }
+
+        ul.pagination8 li a{
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            border: 1px solid #ddd;
+        }
+
+        ul.pagination8 li a.active{
+            background-color: brown;
+            color: white;
+            border: 1px solid grey;
+        }
+
+        ul.pagination8 li a:hover:not(.active)  {
+            background-color: lightpink;
+
+        }
+        div.center{
+            text-align: center;
+        }
+
+        /* previous/next and navigation pagination */
+
+        ul.pagination9{
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul.pagination9 li {
+            display: inline;
+        }
+
+        ul.pagination9 li a{
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            border: 1px solid black;
+            font-size: 18px;
+        }
+
+        ul.pagination9 li a.active{
+            background-color: brown;
+            color: black;
+            border: 1px solid black;
+        }
+
+        ul.pagination li a:hover:not(.active)  {
+            background-color: lightpink;
+        }
+
+        /* breadcrumb pagination */
+
+        ul.breadcrumb{
+            padding: 8px 16px;
+            list-style: none;
+            background-color: #eee;
+        }
+
+        ul.breadcrumb li{
+            display: inline;
+        }
+
+        ul.breadcrumb li+li:before {
+            padding: 8px;
+            color: black;
+            content: "/\00a0" ;
+        }
+
+        ul.breadcrumb li a {
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>CSS pagination</h1>
+    <section>
+        <h2>Basic pagination</h2>
+        <ul class="pagination">
+            <li><a href="practical.html">1</a></li>
+            <li><a class="active" href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+            <li><a href="#">8</a></li>
+            <li><a href="#">9</a></li>
+            <li><a href="#">10</a></li>
+
+        </ul>
+    </section>
+<!-- basic pagination with arrow -->
+    <section>
+        <h2>Basic pagination with arrow</h2>
+        <ul class="pagination1">
+            <li><a href="#">?</a></li>
+            <li><a href="#">1</a></li>
+            <li><a class="active" href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+            <li><a href="#">8</a></li>
+            <li><a href="#">9</a></li>
+            <li><a href="#">10</a></li>
+            <li><a href="#">?</a></li>
+        </ul>
+    </section>
+<!-- Active/current link and hoverable pagination -->
+    <section>
+        <h2>Active/current link and Hoverable pagination</h2>
+        <p>Move the Mouse over the numbers</p>
+        <ul class="pagination2">
+            <li><a href="#">?</a></li>
+            <li><a href="#">1</a></li>
+            <li><a class="active" href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+            <li><a href="#">8</a></li>
+            <li><a href="#">9</a></li>
+            <li><a href="#">10</a></li>
+            <li><a  href="#">?</a></li>
+
+        </ul>
+    </section>
+
+    <!-- rounded Active and hoverable pagination -->
+    <section>
+        <h2>Rounded Active and hover buttons</h2>
+
+        <ul class="pagination3">
+            <li><a  href="#">?</a></li>
+            <li><a  href="#">1</a></li>
+            <li><a class="active" href="#">2</a></li>
+            <li><a  href="#">3</a></li>
+            <li><a  href="#">4</a></li>
+            <li><a  href="#">5</a></li>
+            <li><a  href="#">6</a></li>
+            <li><a  href="#">7</a></li>
+            <li><a  href="#">8</a></li>
+            <li><a  href="#">9</a></li>
+            <li><a  href="#">10</a></li>
+            <li><a  href="#">?</a></li>
+
+        </ul>
+    </section>
+
+    <!-- bordered pagination -->
+    <section>
+        <h2>Bordered pagination</h2>
+        <ul class="pagination4">
+            <li><a href="#">?</a></li>
+            <li><a href="#">1</a></li>
+            <li><a class="active" href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">8</a></li>
+            <li><a href="#">9</a></li>
+            <li><a href="#">10</a></li>
+            <li><a href="#">?</a></li>
+        </ul>
+    </section>
+
+    <!-- Rounded border pagination-->
+    <section>
+        <h2>rounded border pagination</h2>
+        <ul class="pagination5">
+            <li><a href="#">?</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a class="active" href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+            <li><a href="#">8</a></li>
+            <li><a href="#">9</a></li>
+            <li><a href="#">10</a></li>
+            <li><a href="#">?</a></li>
+        </ul>
+    </section>
+
+     <!-- space between pagination -->
+    <section>
+        <h2>space betwwen pagination</h2>
+        <ul class="pagination6">
+            <li><a href="#">?</a></li>
+            <li><a class="active" href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+            <li><a href="#">8</a></li>
+            <li><a href="#">9</a></li>
+            <li><a href="#">10</a></li>
+            <li><a href="#">?</a></li>
+        </ul>
+    </section>
+<!-- pagination size -->
+    <section>
+        <h2>pagination Size</h2>
+        <ul class="pagination7">
+            <li><a href="#">?</a></li>
+            <li><a href="#" class="active">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+            <li><a href="#">8</a></li>
+            <li><a href="#">9</a></li>
+            <li><a href="#">10</a></li>
+            <li><a href="#">?</a></li>
+        </ul>
+    </section>
+
+    <!-- Centered pagination -->
+    <section>
+        <div class="center">
+        <h2>Centered pagination</h2>
+        <ul class="pagination8">
+        <li><a href="#">?</a></li>
+        <li><a href="#" class="active">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li><a href="#">7</a></li>
+        <li><a href="#">8</a></li>
+        <li><a href="#">9</a></li>
+        <li><a href="#">10</a></li>
+        <li><a href="#">?</a></li>
+        </ul>
+        </div>
+    </section>
+
+    <!-- Previous/Next and navigaton pagination -->
+     <section>
+        <h2>previous/net and navigation pagination</h2>
+        <p><strong>Next/previous buttons:</strong></p>
+
+        <ul class="pagination9">
+            <li><a href="#">?</a></li>
+            <li><a href="#">?</a></li>
+
+        </ul>
+        <p><strong>Navigation pagination</strong></p>
+        <ul class="pagination9">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+        </ul>
+     </section>
+
+     <!-- Breadcrumb pagination -->
+
+     <section>
+        <h2>JavaTpoint</h2>
+        <ul class="breadcrumb">
+            <li><a href="#">java</a></li>
+            <li><a href="#">Oracle</a></li>
+            <li><a href="#">PHP</a></li>
+            <li>Angular JS</li>
+        </ul>
+
+        <p><strong>Note:</strong>This is an example of breadcrumb pagination</p>
+     </section>
+    
+</body>
+</html>

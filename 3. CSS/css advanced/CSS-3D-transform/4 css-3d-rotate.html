@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d rotate</title>
+    <style>
+        section{
+            margin: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: beige;
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 30px;
+        }
+        h2{
+            font-size: 30px;
+            font-family: sans-serif;
+            text-align: center;
+        }
+        /*-basic example of 3d rotate */
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: #3498db;
+            transform-style: preserve-3d;
+            transition: transform 2s;
+        }
+
+        .box:hover{
+            transform: rotate3d(1, 1, 0, 45deg);  /*X,Y,Z axis and the angle  in degrees */
+        }
+
+        /*--example of 3d rotate-box */
+        .rotate-box{
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin: 50px;
+            transform-style: preserve-3d;
+            animation: rotate 5s infinite;
+        }
+
+        @keyframes rotate{
+            0%{
+                transform: rotate3d(1, 1, 0, 0deg);   /*--Rotate around the x and y axes--*/
+            }
+            50%{
+                transform: rotate3d(0, 1, 0, 180deg);     /*-rotate around the y axis--*/
+            }
+            100%{
+                transform: rotate3d(1, 0, 0, 360deg);    /*rotate around the X axis--*/
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h2>basic example 3d rotate</h2>
+        <div class="box">hover on me</div>
+    </section>
+
+    <section>
+    <h2>example of 3d rotate-box</h2>
+    <div class="rotate-box"></div>
+    </section>
+</body>
+</html>

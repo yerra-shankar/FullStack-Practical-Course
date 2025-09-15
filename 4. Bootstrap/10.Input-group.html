@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/boot.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.min.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .input-group-text1 {
+            background-color: darkred;
+            color: azure;
+        }
+
+        .form-control1 {
+            background-color: lightblue;
+        }
+
+        .input-group-text2 {
+            background-color: darkgreen;
+            color: azure;
+        }
+
+        .form-control2,
+        .form-control2:focus {
+            background-color: bisque;
+        }
+    </style>
+    <title>bootstrap</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <a href="#" class="navbar-brand m-2"> BS Input-groups</a>
+        <h4 class="text-white me-3">Bootstrap and MDB</h4>
+
+    </nav>
+
+    <!-- ************ start Here************* -->
+
+
+    <div class="container mt-5">
+        <h1 class="display-3 mb-5"><mark>Example of Input-group</mark></h1>
+        <div class="input-group mb-3">
+            <span class="input-group-text bg-danger text-white" id="basic-addon1">
+                @
+            </span>
+            <input type="text" class="form-control bg-light text-white" placeholder="Username"
+                aria-describedby="basic-addon1">
+        </div>
+
+        <div class="input-group mb-3">
+            <input type="text" class="form-control bg-light text-white" placeholder="Last Name"
+                aria-describedby="basic-addon2">
+            <span class="input-group-text bg-warning text-white" id="basic-addon2">@example.com</span>
+        </div>
+
+        <div class="input-group mb-4">
+            <span class="input-group-text bg-success text-white">#</span>
+            <input class="form-control bg-light text-white" placeholder="Password">
+            <span class="input-group-text bg-success text-white">#example.com</span>
+        </div>
+
+        <div class="mb-3">
+            <label for="basic-url" class="form-label">Your vanity URL</label>
+            <div class="input-group">
+                <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+            </div>
+            <div class="form-text" id="basic-addon4">Example of help text goes outside the input group</div>
+        </div>
+
+        <div class="input-group mb-4">
+            <input type="text" class="form-control bg-light text-white" placeholder="FirstName" aria-label="UserName">
+            <span class="input-group-text bg-secondary">@</span>
+            <input type="text" class="form-control bg-light text-white" placeholder="lastName" aria-label="lastName">
+
+        </div>
+
+        <div class="input-group mb-5">
+            <span class="input-group-text bg-primary text-white">textarea</span>
+            <textarea class="form-control" aria-label="with textarea"></textarea>
+        </div>
+        <hr>
+        <h1>example of input-group using fonts (export font-awesome link)</h1>
+        <hr>
+        <div class="input-group mb-4">
+            <span class="input-group-text bg-info text-white">
+                <i class="fa-solid fa-file-signature"></i>
+            </span>
+            <input type="text " class="form-control bg-light text-white" placeholder="Enter Your Details">
+            <span class="input-group-text bg-info text-white">
+                <i class="fa-regular fa-address-card"></i>
+            </span>
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text bg-danger text-white" id="basic-addon1">
+                <i class="fa-solid fa-face-smile"></i>
+            </span>
+            <input type="text" class="form-control bg-light text-white" placeholder="Username"
+                aria-describedby="basic-addon1">
+
+        </div>
+        <hr>
+        <br>
+        <h1>example of custom color</h1>
+        <div class="input-group mb-3">
+            <span class="input-group-text input-group-text1">textarea</span>
+            <textarea class="form-control form-control1"></textarea>
+        </div>
+
+        <div class="input-group mb-3">
+            <input type="text" class="form-control form-control2" placeholder="Last Name"
+                aria-describedby="basic-addon2">
+            <span class="input-group-text input-group-text2" id="basic-addon2">@example.com</span>
+        </div>
+        <hr>
+        <br>
+        <h1>Example of input-group sizes</h1>
+        <div class="input-group input-group-sm mb-3">
+            <span class="input-group-text bg-light">Small</span>
+            <input type="text" class="form-control">
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text bg-light">default</span>
+            <input type="text" class="form-control">
+        </div>
+
+        <div class="input-group  input-group-lg mb-3">
+            <span class="input-group-text bg-light">large</span>
+            <input type="text" class="form-control">
+        </div>
+        <hr>
+        <br>
+        <h1>example of input-groups with checkboxes and radios</h1>
+        <div class="input-group mb-3">
+            <div class="input-group-text bg-success">
+                <input type="checkbox" class="form-check-input mt-0" value=""
+                    aria-label="checkbox for following text input">
+            </div>
+            <input type="text" class="form-control bg-light" placeholder="Search..."
+                aria-label="Text input with checkbox">
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-text bg-success">
+                <input class="form-check-input mt-0 " type="radio" value=""
+                    aria-label="Radio button for following text input">
+            </div>
+            <input type="text" class="form-control bg-light" placeholder="Search..."
+                aria-label="Text input with radio button">
+        </div>
+        <hr>
+        <br>
+        <h1>Example of multiple inputs</h1>
+        <div class="input-group">
+            <span class="input-group-text bg-primary text-white">
+                <i class="fa-solid fa-users"></i>
+            </span>
+            <input type="text" aria-label="first name" class="form-control " placeholder="FirstName">
+            <input type="text" aria-label="first name" class="form-control " placeholder="LastName">
+        </div>
+        <hr>
+        <br>
+        <h1>Example of Multiple addons</h1>
+        <div class="input-group mb-3">
+            <span class="input-group-text bg-info text-white">
+                <i class="fa-brands fa-facebook"></i>
+            </span>
+            <span class="input-group-text bg-secondary text-white">
+                <i class="fa-brands fa-instagram"></i>
+            </span>
+            <input type="text" class="form-control bg-light" placeholder="Search...">
+        </div>
+
+
+        <div class="input-group mb-3">
+            <input type="text" class="form-control bg-light " placeholder="Search...">
+            <span class="input-group-text bg-danger text-white">
+                <i class="fa-brands fa-youtube"></i>
+            </span>
+            <span class="input-group-text bg-success text-white">
+                <i class="fa-brands fa-whatsapp "></i>
+            </span>
+        </div>
+        <hr>
+        <br>
+        <h1>example of button addons</h1>
+        <div class="input-group mb-3">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+            <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon"
+                aria-describedby="button-addon1">
+        </div>
+
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Recipient’s username" aria-label="Recipient’s username"
+                aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+        </div>
+
+        <div class="input-group mb-3">
+            <button class="btn btn-outline-secondary" type="button">Button</button>
+            <button class="btn btn-outline-secondary" type="button">Button</button>
+            <input type="text" class="form-control" placeholder="" aria-label="Example text with two button addons">
+        </div>
+
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Recipient’s username"
+                aria-label="Recipient’s username with two button addons">
+            <button class="btn btn-outline-secondary" type="button">Button</button>
+            <button class="btn btn-outline-secondary" type="button">Button</button>
+        </div>
+        <hr>
+        <br>
+        <h1>Example of custom file input</h1>
+        <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupFile01">Upload</label>
+            <input type="file" class="form-control" id="inputGroupFile01">
+        </div>
+
+        <div class="input-group mb-3">
+            <input type="file" class="form-control" id="inputGroupFile02">
+            <label class="input-group-text " for="inputGroupFile02">Upload</label>
+        </div>
+
+        <div class="input-group mb-3">
+            <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon03">Button</button>
+            <input type="file" class="form-control" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03"
+                aria-label="Upload">
+        </div>
+
+        <div class="input-group">
+            <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04"
+                aria-label="Upload">
+            <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button>
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+    <!-- *********** End Here *************** -->
+
+
+    <div style="margin-bottom: 500px;"></div>
+
+
+
+
+
+
+    <script src="bootstrap/js/boot.js"></script>
+    <script src="bootstrap/js/mdb.es.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tooltip</title>
+    <style>
+        section{
+            border: 2px solid black;
+            background-color: beige;
+            padding: 30px;
+            margin: 50px;
+        }
+        /*--Basic tooltip example-- */
+        .tooltip{
+            position: relative;
+            display: inline-block;
+            border-bottom:1px dotted black;
+            cursor: pointer;
+        }
+        .tooltip .tooltiptext{
+            visibility: hidden;
+            width: 220px;
+            background-color: red;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+        }
+        .tooltip:hover .tooltiptext{
+            visibility: visible;
+        }
+
+        /*--TOP-Tooltip-example--*/
+        .tooltip1{
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+            cursor: pointer;
+        }
+        .tooltip1 .tooltiptext1{
+            visibility: hidden;
+            width: 320px;
+            background-color: red;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -60px;
+
+        }
+        .tooltip1:hover .tooltiptext1{
+            visibility: visible;
+        }
+        
+        /*--BOTTOM-tooltip--example */
+
+        .tooltip2{
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+            cursor: pointer;
+        }
+        .tooltip2 .tooltiptext2{
+            visibility: hidden;
+            width: 220px;
+            background-color: red;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            top: 100%;
+            left: 50%;
+            margin-left: -60px;
+        }
+        .tooltip2:hover .tooltiptext2{
+            visibility: visible;
+        }
+
+        /*--Left-tooltip-example */
+        .tooltip3{
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+            cursor: pointer;
+        }
+
+        .tooltip3 .tooltiptext3{
+            visibility: hidden;
+            width: 310px;
+            background-color: red;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            top: -5px;
+            right: 105%;
+
+        }
+        .tooltip3:hover .tooltiptext3{
+            visibility: visible;
+        }
+
+        /*--right-tooltip-example */
+        .tooltip4{
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+            cursor: pointer;
+        }
+        .tooltip4 .tooltiptext4{
+            visibility: hidden;
+            width: 310px;
+            background-color: red;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            top: -5px;
+            left: 110%;
+        }
+        .tooltip4:hover .tooltiptext4{
+            visibility: visible;
+        }
+    </style>
+</head>
+<body style="text-align: center;font-family: sans-serif;font-size: 25px;">
+    <section>
+        <h2>Basic example of tooltip</h2>
+    <p>Move the mouse over the text below:</p>
+    <div class="tooltip">Hover over me
+        <span class="tooltiptext">This is tooltip text</span>
+    </div>
+    </section>
+
+    <section>
+        <h2>Top Tooltip Example</h2>
+        <p>Move your mouse Cursor over the below heading</p>
+        <div class="tooltip1">
+            <strong>Welcome to javaTpoint</strong>
+            <span class="tooltiptext1">A solution of all technology.</span>
+        </div>
+    </section>
+
+    <section>
+        <h2>Bottom Tooltip example</h2>
+        <p>Move your mouse Cursor over the below heading</p>
+        <div class="tooltip2">
+            <strong>SHANKAR</strong>
+            <span class="tooltiptext2">full stack developer</span>
+        </div>
+    </section>
+
+    <section>
+        <h2>Left Tooltip example</h2>
+        <p>Move your mouse Cursor over the below heading</p>
+        <div class="tooltip3">
+            <strong>Welcome to javaTpoint</strong>
+            <span class="tooltiptext3">A solution of all technology.</span>
+        </div>
+    </section>
+
+    <section>
+        <h2>Right Tooltip example</h2>
+        <p>Move your mouse Cursor over the below heading</p>
+        <div class="tooltip4">
+            <strong>Welcome to javaTpoint</strong>
+            <span class="tooltiptext4">A solution of all technology.</span>
+        </div>
+    </section>
+
+
+</body>
+</html>

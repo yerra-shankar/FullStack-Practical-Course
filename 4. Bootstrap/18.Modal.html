@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/boot.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.min.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.0.0/mdb.min.css"
+  rel="stylesheet" 
+/>-->
+
+    <title>bootstrap</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <a href="#" class="navbar-brand m-2"> BS Modal</a>
+        <h4 class="text-white me-3">Bootstrap and MDB</h4>
+
+    </nav>
+
+    <!-- ************ start Here************* -->
+
+
+    <div class="container mt-5">
+        <h1>Example of modal to register form</h1>
+
+        <div class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#register-modal"> Register</div>
+
+        <div class="modal" id="register-modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-secondary text-white">
+                        <h5>Register Here</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        </button>
+                    </div>
+                    <div class="modal-body bg-light">
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="UserName">
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="email">
+                            </div>
+                            <div class="mb-3">
+                                <input type="password" class="form-control" placeholder="password">
+                            </div>
+                            <div class="mb-3">
+                                <input tyep="password" class="form-control" placeholder="confirm-password">
+
+                            </div>
+                            <div class="mb-3">
+                                <textarea row="4" class="form-control" placeholder="about your self"></textarea>
+
+                            </div>
+                            <div>
+                                <a href="C:\Users\DELL\Desktop\shankar.py\Html\Html projects\anotherwebpage.html"
+                                    class="btn btn-primary " type="submit">Register</a>
+                                <button class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <h1>example of modal-(header,body,footer)</h1>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Launch demo modal
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        modal-body.....
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <h1>Example of static</h1>
+        <p>When backdrop is set to static, the modal will not close when clicking outside of it. Click the button below
+            to try it.</p>
+        <br>
+        <button class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#static-modal">statoc
+            backdrop modal</button>
+
+
+            <div class="modal" id="static-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">modal-title</h5>
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="lead"> I will not close if you click outside of me. Don’t even try to press escape key
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-success" type="button" data-bs-dismiss="modal">close</button>
+                        <button class="btn btn-primary" type="button">understood</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <h1>Example of long content</h1>
+        <button class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#static-modal1">long content</button>
+        <div class="modal" id="static-modal1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">modal-title</h5>
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo dolore esse iusto
+                            delectus quo facere repellendus architecto, voluptatem perferendis atque, nam veniam
+                            voluptate aperiam, totam labore itaque reprehenderit. Quos, tempora. Molestiae voluptas quis
+                            nihil praesentium tempore, sapiente tempora. Assumenda commodi ipsa, ab accusamus quam,
+                            voluptatem rem odit pariatur nemo nam ad repellendus fugit doloribus quasi? Fugiat nulla
+                            consectetur labore id maxime aliquam iure similique! Exercitationem unde eaque suscipit
+                            officia atque sint molestias maiores nobis vitae consequatur veniam eveniet quae obcaecati,
+                            voluptatibus, possimus nihil quidem libero explicabo odio ab ad totam et beatae. Esse nobis
+                            pariatur soluta, dolor placeat, cumque similique architecto quaerat deleniti harum dolore
+                            corporis cum unde tempora nostrum. Nihil tempore rerum maiores similique fugiat, harum
+                            corporis unde dolore placeat veritatis molestiae deleniti, quibusdam iusto distinctio veniam
+                            soluta quidem laborum beatae quo itaque tenetur voluptatem? Expedita corrupti sint ipsa
+                            nostrum labore consequuntur, sit nam laudantium facilis reprehenderit dolore earum! I will
+                            not close if you click outside of me. Don’t even try to press escape key
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-success" type="button" data-bs-dismiss="modal">close</button>
+                        <button class="btn btn-primary" type="button">understood</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <br>
+        <h1>example of scrollable content</h1>
+
+        <button class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#static-modal2">scrollable content</button>
+
+        <div class="modal" id="static-modal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">modal-title</h5>
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab harum vero ad,
+                            quaerat magnam laboriosam saepe earum illum iste ducimus tempora, reprehenderit aliquam
+                            obcaecati aperiam error voluptatem culpa, quisquam placeat. Aut voluptate totam vitae animi
+                            quasi odit quia, earum laudantium dolorem debitis quis maiores sit. Accusamus voluptas ipsum
+                            animi placeat aperiam eveniet architecto eos sed deserunt quisquam, modi dicta quas sunt,
+                            eligendi dignissimos molestiae beatae. Vel consequatur ex totam inventore beatae, dicta
+                            aspernatur fuga commodi repellendus voluptatem eveniet fugit eos a rem impedit aut mollitia
+                            quasi veniam dolor optio quia veritatis fugiat similique tempore? Aspernatur fuga placeat
+                            fugiat sequi, consequuntur nesciunt? Sint laborum perferendis hic reprehenderit neque fuga
+                            temporibus, nihil, eaque dolores in vero soluta recusandae rem modi earum tempora! Odit
+                            itaque eius perspiciatis sint numquam officiis ex fugiat et voluptatum porro est ratione
+                            amet temporibus facilis odio consequatur omnis, repudiandae dolores. Velit consequatur
+                            veritatis eos! Ipsum nulla delectus perferendis? Molestias animi esse quas placeat alias
+                            tempore excepturi odit eum. Iure nihil eius est ipsam architecto tempora fuga quos
+                            temporibus ratione quae! Assumenda aspernatur ab alias delectus autem totam quisquam, nam
+                            nesciunt dolores quidem doloremque obcaecati asperiores provident pariatur vel voluptate
+                            quas et praesentium vitae voluptatem soluta suscipit deserunt! Veritatis quisquam ut sint,
+                            magni animi nostrum enim illo vel ullam, quo quod. Sequi perspiciatis laudantium nulla
+                            provident consequuntur omnis consectetur aperiam quod eius. Eum, explicabo! Accusamus
+                            dolores pariatur facilis, alias quia asperiores cum! Ipsa, placeat cupiditate. Repellendus a
+                            obcaecati sint quibusdam neque nobis ab magnam voluptates sit laudantium cumque dolores,
+                            esse ut, ratione officia tempore saepe, fugiat quam quia! Adipisci mollitia id repudiandae
+                            reprehenderit quos itaque corrupti, quo, architecto modi repellendus non! Fugit, ea sunt.
+                            Sed velit ullam tenetur, sit repudiandae, quibusdam aspernatur molestiae iusto dignissimos
+                            voluptatum dolor culpa nesciunt doloremque ratione. Iure animi, magnam sit necessitatibus
+                            quos iusto ipsa maiores dolor nostrum reprehenderit alias cum sint hic, obcaecati quaerat
+                            provident dicta! Necessitatibus tempore quo minima incidunt illum sint pariatur quas saepe
+                            porro non commodi corporis, accusantium earum! Iste eum quasi reiciendis, quidem maxime
+                            alias itaque aperiam, necessitatibus a libero quas ducimus error dolore. Ex asperiores
+                            itaque exercitationem sit alias aperiam quo id commodi nostrum voluptate cum, nihil dolorum
+                            nemo suscipit quod laudantium placeat. Expedita, nulla ipsam quaerat, nostrum tenetur,
+                            veritatis soluta dolorem vel et maxime inventore? Culpa, necessitatibus. Vitae non expedita
+                            doloremque. Aperiam ea nam quidem, unde reprehenderit debitis cupiditate provident! Pariatur
+                            inventore neque a aliquam porro? Voluptas, id. I will not close if you click outside of me.
+                            Don’t even try to press escape key</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-success" type="button" data-bs-dismiss="modal">close</button>
+                        <button class="btn btn-primary" type="button">understood</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- *********** End Here *************** -->
+
+
+    <div style="margin-bottom: 500px;"></div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.0.0/mdb.umd.min.js"></script>
+
+    <!-- <script src="bootstrap/js/boot.js"></script>
+  <script src="bootstrap/js/mdb.es.min.js"></script> -->
+</body>
+
+</html>

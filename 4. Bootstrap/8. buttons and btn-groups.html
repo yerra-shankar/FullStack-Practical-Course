@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/boot.css">
+    <!-- <link rel="stylesheet" href="bootstrap/css/mdb.min.css"> -->
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <title>bootstrap</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <a href="#" class="navbar-brand m-2"> BS Buttons and buttons-groups</a>
+        <h4 class="text-white me-3">Bootstrap and MDB</h4>
+
+    </nav>
+
+    <!-- ************ start Here************* -->
+
+
+    <div class="container mt-5">
+        <h1 class="display-3"><mark>Example of Buttons</mark></h1>
+        <hr>
+        <br>
+        <h2>Example of base class</h2>
+        <button type="button" class="btn">Base class</button>
+        <hr>
+        <br>
+        <h2>Example of variants button</h2>
+        <button type="button" class="btn btn-primary">btn-primary</button>
+        <button type="button" class="btn btn-secondary">btn-Secondary</button>
+        <button type="button" class="btn btn-success">btn-success</button>
+        <button type="button" class="btn btn-danger">btn-Danger</button>
+        <button type="button" class="btn btn-warning">btn-warning</button>
+        <button type="button" class="btn btn-info">btn-info</button>
+        <button type="button" class="btn btn-dark">btn-dark</button>
+        <button type="button" class="btn btn-light">btn-light</button>
+
+        <button type="button" class="btn btn-link">btn-link</button>
+        <hr>
+        <br>
+        <br>
+        <h1>example of Button tags</h1>
+        <a href="#" class="btn btn-primary" role="button"> anochor-btn</a>
+        <button class="btn btn-primary" type="submit"> Sumbit-btn</button>
+        <input class="btn btn-primary" type="button" value="Input-btn">
+        <input class="btn btn-primary" type="submit" value="Inp-sumbit-btn">
+        <input class="btn btn-primary" type="reset" value="inp-reset-btn">
+        <br>
+        <hr>
+        <br>
+        <h1>Example of button-outline</h1>
+        <button type="button" class="btn btn-outline-primary">outline-primary</button>
+        <button type="button" class="btn btn-outline-secondary">outline-secondary</button>
+        <button type="button" class="btn btn-outline-success">outline-success</button>
+        <button type="button" class="btn btn-outline-danger">outline-danger</button>
+        <button type="button" class="btn btn-outline-warning">outline-warning</button>
+        <button type="button" class="btn btn-outline-info">outline-info</button>
+        <button type="button" class="btn btn-outline-dark">outline-dark</button>
+        <buttoN type="button" class="btn btn-outline-light text-dark">outline-light</button>
+        <br>
+        <hr>
+        <br>
+        <h1>Example of button-sizes(btn-lg, btn-sm, btn-block)</h1>
+        <button type="button" class="btn btn-primary btn-lg">Large button</button>
+        <button type="button" class="btn btn-primary btn-sm">Small button</button>
+        <br>
+        <br>
+        <button type="button" class="btn btn-primary btn-block">block button</button>
+        <button type="button" class="btn btn-primary btn-block btn-lg">large block button </button>
+        <button type="button" class="btn btn-primary btn-block btn-sm">small block button</button>
+        <br>
+        <hr>
+        <br>
+        <h1>example of Disabled state</h1>
+        <button type="button" class="btn btn-primary" disabled>disabled-btn</button>
+        <button type="button" class="btn btn-secondary" disabled>disabled button</button>
+        <button type="button" class="btn btn-outline-primary" disabled>disabled button</button>
+        <button type="button" class="btn btn-outline-secondary" disabled>disabled button</button>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <br>
+        <h1 class="display-3"><mark>Example of Button Group</mark></h1>
+        <div class="btn-group" role="group" arial-label="Basic example">
+            <button type="button" class="btn btn-primary">Left</button>
+            <button type="button" class="btn btn-primary">Middle</button>
+            <button type="button" class="btn btn-primary">Right</button>
+        </div>
+        <br>
+        <br>
+        <div class="btn-group">
+            <a href="#" class="btn btn-primary active" aria-current="page">Active link</a>
+            <a href="#" class="btn btn-primary">Link</a>
+            <a href="#" class="btn btn-primary">Link</a>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h1>example of group mixed colors</h1>
+        <div class="btn-group" role="group" aria-lbel="Basic mixed styles example">
+            <button type="button" class="btn btn-danger">Left</button>
+            <button type="button" class="btn btn-warning">Middle</button>
+            <button type="button" class="btn btn-success">Right</button>
+        </div>
+        <br>
+        <hr>
+        <h1>example of group outlined styles</h1>
+        <div class="btn-group" role="group" aria-label="Basic oulined example">
+            <button type="button" class="btn btn-outline-primary">Left</button>
+            <button type="button" class="btn btn-outline-primary">Middle</button>
+            <button type="button" class="btn btn-outline-primary">Right</button>
+
+        </div>
+        <br>
+        <hr>
+        <br>
+
+        <h1>example of group checkboxes</h1>
+        <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+    
+            <input type="checkbox" class="btn-check" id="btncheck1"  autocomplete="off">
+            <label class="btn btn-outline-primary" for="btncheck1">Checkbox 1</label>
+
+            <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btncheck2">Checkbox 2</label>
+
+            <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btncheck3">Checkbox 3</label>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+            <label class="btn btn-outline-primary" for="btnradio1">Radio 1</label>
+
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btnradio2">Radio 2</label>
+
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btnradio3">Radio 3</label>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h1>example of group vertical buttons</h1>
+        <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+            <button type="button" class="btn btn-primary">Button</button>
+            <button type="button" class="btn btn-primary">Button</button>
+            <button type="button" class="btn btn-primary">Button</button>
+            <button type="button" class="btn btn-primary">Button</button>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h1>Example of toolbar button</h1>
+        <div class="btn-toolbar" role="toolbar">
+            <div class="btn-group me-2 role=group">
+                <button class="btn btn-outline-danger">1</button>
+                <button class="btn btn-outline-danger">1</button>
+                <button class="btn btn-outline-danger">1</button>
+
+            </div>
+        </div>
+        
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+    <!-- *********** End Here *************** -->
+
+
+    <div style="margin-bottom: 500px;"></div>
+
+
+
+
+
+
+    <script src="bootstrap/js/boot.js"></script>
+    <script src="bootstrap/js/mdb.es.min.js"></script>
+</body>
+
+</html>

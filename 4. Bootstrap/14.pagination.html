@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/boot.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.min.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>bootstrap</title>
+    <style>
+        .page-item1 {
+            background: linear-gradient(45deg, grey, red);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <a href="#" class="navbar-brand m-2"> BS Pagination</a>
+        <h4 class="text-white me-3">Bootstrap and MDB</h4>
+    </nav>
+
+
+    <!-- ************ start Here************* -->
+
+
+    <div class="container mt-5">
+        <h1 class="display-3"><marK>Example of deafult pagination</marK></h1>
+        <h2>bootstrap is deafult border but mdb is not have default bootstrap</h2>
+        <br>
+        <div>
+            <ul class="pagination">
+                <li class="page-item">
+                    <a href="#" class="page-link">Previous</a>
+                </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">1</a>
+                </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">2</a>
+                </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">3</a>
+                </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">4</a>
+                </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">5</a>
+                </li>
+                <li class="page-item">
+                    <a href="#" class="page-link">Next</a>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <br>
+        <h1>examle of active</h1>
+        <div>
+            <ul class="pagination">
+                <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active">
+                    <a class="page-link" href="#" aria-current="page">2</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </div>
+        <hr>
+        <br>
+        <h1>example of sizes(lg,sm)</h1>
+        <div>
+            <ul class="pagination pagination-lg">
+                <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active">
+                    <a class="page-link" href="#" aria-current="page">2</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </div>
+        <br>
+        <div>
+            <ul class="pagination pagination">
+                <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active">
+                    <a class="page-link" href="#" aria-current="page">2</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </div>
+        <br>
+        <div>
+            <ul class="pagination pagination-sm">
+                <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active">
+                    <a class="page-link" href="#" aria-current="page">2</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h1>Exmaple of pagination-circle is only worked on <mark>MDB</mark></h1>
+        <div>
+            <ul class="pagination pagination-circle">
+                <li class="page-item"><a href="#" class="page-link">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active">
+                    <a class="page-link" href="#" aria-current="page">2</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h1>custom pagination</h1>
+        <div class="page-item1">
+            <ul class="pagination">
+                <li class="page-item "><a href="#" class="page-link">Previous</a></li>
+                <li class="page-item "><a class="page-link bg-success" href="#">1</a></li>
+                <li class="page-item ">
+                    <a class="page-link" href="#" aria-current="page">2</a>
+                </li>
+                <li class="page-item "><a class="page-link" href="#">3</a></li>
+                <li class="page-item "><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </div>
+        <hr>
+        <br>
+        <h1>Example of pagination with icons</h1>
+        <div>
+            <ul class="pagination pagination-lg">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+        <br>
+        <div>
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <i class="fa-solid fa-house"></i>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <i class="fa-solid fa-list"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <br>
+        <h1>Example of disabled </h1>
+        <div>
+            <ul class="pagination pagination-lg">
+                <li class="page-item disabled"><a href="#" class="page-link">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active">
+                    <a class="page-link" href="#" aria-current="page">2</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </div>
+
+
+
+
+
+
+        <!-- *********** End Here *************** -->
+
+
+        <div style="margin-bottom: 500px;"></div>
+
+
+
+
+
+
+        <script src="bootstrap/js/boot.js"></script>
+        <script src="bootstrap/js/mdb.es.min.js"></script>
+</body>
+
+</html>

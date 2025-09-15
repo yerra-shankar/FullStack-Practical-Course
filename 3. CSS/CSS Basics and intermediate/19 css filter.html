@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css filter property</title>
+    <style>
+        body{
+            margin-left: 150px;
+            
+        }
+
+        h1{
+            text-align: center;
+            border-bottom: 2px solid black;
+            width: 250px;
+            margin-left: 400px;
+        }
+        h2{
+            border-bottom: 2px solid black;
+        }
+
+        #img1{
+            filter: brightness(170%);
+        }
+
+        #img2{
+            filter: blur(3px);
+        }
+
+        #img3{
+            filter: invert(60);
+        }
+
+        #img4{
+            filter: saturate(5);
+        }
+
+        #img5{
+            filter: drop-shadow(10px 20px 30px yellow);
+        }
+
+        #img6{
+            filter: contrast(30%);
+        }
+
+        #img7{
+            filter: opacity(30%);
+        }
+
+        #img8{
+            filter: hue-rotate(240deg);
+        }
+
+        #img9{
+            filter: grayscale(80%);
+        }
+
+        #img10{
+            filter: sepia(90%);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>filter property</h1>
+    <b><u>syntax:</u></b> 
+    <p>filter: none | invert() | drop-shadow() | brightness() | saturate() | blur() | hue-rotate() | contrast() | opacity() | grayscale() | sepia() | url();</p>
+    <img src="D:\shankarphotos\shankarphotos\IMG_20211206_201122-02.jpeg" alt="normal photo" height="300" width="200">
+    <h2>Original image</h2>
+    <img src="D:\shankarphotos\shankarphotos\IMG_20211206_201122-02.jpeg" id="img1" alt="normal photo" height="300" width="200">
+    <h2>brightness(170%)</h2>
+
+    <img src="D:\shankarphotos\shankarphotos\IMG_20211206_201122-02.jpeg" id="img2" alt="normal photo" height="300" width="200">
+    <h2>blur(3px)</h2>
+
+    <img src="D:\shankarphotos\shankarphotos\IMG_20211206_201122-02.jpeg" id="img3" alt="normal photo" height="300" width="200">
+    <h2>invert(60)</h2>
+
+    <img src="D:\shankarphotos\shankarphotos\IMG_20211206_201122-02.jpeg" id="img4" alt="normal photo" height="300" width="200">
+    <h2>saturate(40)</h2>
+
+    <img src="D:\shankarphotos\shankarphotos\IMG_20211206_201122-02.jpeg" id="img5" alt="normal photo" height="300" width="200">
+    <h2>drop-shadow(10px 20px 30px yellow)</h2>
+
+    <img src="D:\shankarphotos\shankarphotos\IMG_20211206_201122-02.jpeg" id="img6" alt="normal photo" height="300" width="200">
+    <h2>contrsat(30%)</h2>
+
+    <img src="D:\shankarphotos\shankarphotos\IMG_20211206_201122-02.jpeg" id="img7" alt="normal photo" height="300" width="200">
+    <h2>opacity(30%)</h2>
+
+    <img src="D:\shankarphotos\shankarphotos\IMG_20211206_201122-02.jpeg" id="img8" alt="normal photo" height="300" width="200">
+    <h2>hue-rotate(240deg)</h2>
+
+    <img src="D:\shankarphotos\shankarphotos\IMG_20211206_201122-02.jpeg" id="img9" alt="normal photo" height="300" width="200">
+    <h2>grayscale(80%)</h2>
+
+    <img src="D:\shankarphotos\shankarphotos\IMG_20211206_201122-02.jpeg" id="img10" alt="normal photo" height="300" width="200">
+    <h2>sepia(90%)</h2>
+</body>
+</html>

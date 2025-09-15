@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: azure;
+    font-family: calibri, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 80px;
+    color: black;
+    margin-bottom: 10px
+}
+
+.button {
+    background-color: gray;
+    font-size: 22px;
+    padding: 10px 40px;
+    border: none;
+    margin: 30px;
+    color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+
+}
+
+.button:hover {
+    transform: scale(1.3, 1.3);
+    transition: all 0.5s;
+}
+
+article {
+    font-size: 30px;
+    color: black;
+}
+
+header {
+    background: linear-gradient(45deg, navy, darkgreen);
+    padding: 25px;
+    
+}
+
+header h1 {
+    color: whitesmoke;
+}
+
+nav {
+    background-color: lightgray;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px 25px;
+    display: inline-block;
+    font-size: 25px;
+    color: black;
+    
+}
+
+nav a:hover {
+    background: lightseagreen;
+    color: whitesmoke;
+}
+
+.home-section {
+    background-color: lightgray;
+    border: solid;
+    border-radius: 50px;
+    margin: 100px;
+    padding: 100px;
+
+}
+
+.places-section {
+    background-color: lightgray;
+    border: solid;
+    border-radius: 50px;
+    margin: 100px;
+    padding: 100px
+}
+
+
+.our-packages {
+    background-color: lightgray;
+    padding: 100px;
+    border-radius: 50px;
+    border: solid;
+    margin: 100px;
+
+}
+
+.our-packages figure {
+    box-shadow: 0 0 30px black;
+    width: 400px;
+    display: inline-block;
+    padding: 30px;
+    margin: 80px;
+}
+
+.our-packages figure img {
+    width: 400px;
+    transition: all 1.0s;
+}
+
+.our-packages figure figcaption {
+    font-size: 35px;
+    transform: scale(1.5, 1.5);
+}
+
+.our-packages figure article {
+    font-size: 25px;
+
+}
+
+.kedarnath img:hover {
+    transform: scale(1.8, 1.8);
+
+}
+
+.mahal img:hover {
+    transform: scale(2.2, 2.2);
+
+}
+
+.france img:hover {
+    transform: scale(1.8, 1.8);
+
+}
+
+.manali img:hover {
+    transform: scale(2.2, 2.2);
+
+}
+
+.ladakh img:hover {
+    transform: scale(2.2, 2.2);
+
+}
+
+.vizag img:hover {
+    transform: scale(2.2, 2.2);
+}
+
+.photos {
+    border: solid;
+    background-color: lightgray;
+    margin: 100px;
+    padding: 100px;
+    border-radius: 50px;
+}
+.photos figure{
+    box-shadow:  0 0 30px black;
+    width: 300px;
+    margin: 50px;
+    padding:30px;
+    display: inline-block;
+    background-color: lightsteelblue;
+
+}
+.photos figure img{
+    transition: all 1.0s;
+}
+
+.beach img:hover{
+    transform: scale(2.0,2.0);
+
+}
+.vk img:hover{
+    transform: scale(2.0,2.0);
+}
+.waterfall img:hover{
+    transform: scale(2.0,2.0);
+
+}
+.travelingwaterfall img:hover{
+    transform: scale(2.0,2.0);
+
+}
+.coupledance img:hover{
+    transform: scale(2.0,2.0);
+}
+.campfire img:hover{
+    transform: scale(2.0,2.0);
+
+}
+.travelcampfire img:hover{
+    transform: scale(2.0,2.0);
+
+}
+.tea img:hover{
+    transform: scale(2.0,2.0);
+
+}
+.streetfood img:hover{
+    transform: scale(2.0,2.0);
+
+}
+.luxuryhotel img:hover{
+    transform: scale(2.0,2.0);
+
+}
+.luxuryresort img:hover{
+    transform: scale(2.0,2.0);
+    
+}
+.tribaldance img:hover{
+    transform: scale(2.0,2.0);
+
+}
+.indiannavy img:hover{
+    transform: scale(2.0,2.0);
+
+}
+.camera img:hover{
+    transform: scale(2.0,2.0);
+
+}
+.bengaltiger img:hover{
+    transform: scale(2.0,2.0);
+
+}
+.contact {
+    background-color: lightgray;
+    border: solid;
+    border-radius: 50px;
+    padding: 50px;
+    margin: 100px;
+}
+
+.contact h2 {
+    font-size: 50px;
+
+}
+
+.contact td {
+    font-size: 30px;
+}
+
+.main-footer {
+    background-color: gray;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+}

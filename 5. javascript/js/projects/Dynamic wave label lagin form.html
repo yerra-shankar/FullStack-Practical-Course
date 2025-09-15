@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic wave label login form</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #a5b1c2;
+            color: #fff;
+            font-family: 'roboto';
+            height: 100vh;
+            overflow: hidden;
+            margin: 0;
+        }
+        .container{
+            background-color: #1e272e;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 400px;
+            padding: 40px;
+            transform: translate(-50%, -50%);
+            backdrop-filter: blur(3px);
+            box-sizing: border-box;
+            border-radius: 0.5rem;
+            box-shadow: 10px 10px 20px #485460;
+        }
+
+        .container h1{
+            text-align: center;
+            margin-bottom: 30px;
+            color: #18dcff;
+            text-transform: capitalize;
+        }
+        .container a{
+            text-decoration: none;
+            color: #18dcff;
+        }
+
+        .btn{
+            margin: 0 auto;
+            display: inline-block;
+            position: relative;
+            padding: 10px 125px;
+            color: #000;
+            font-size: 16px;
+            background-color: #18dcff;
+            border-radius: 25px;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            overflow: hidden;
+            transition: 0.3s ease;
+            border: 2px solid #18dcff;
+        }
+        .btn:hover{
+            /* transform: translateX(5px); */
+            background-color: transparent;
+            color: #fff;
+        }
+        .text{
+            margin-top: 30px;
+        }
+        .form-control {
+            position: relative;
+            margin: 20px 0 40px;
+            width: 300px;
+         }
+
+        .form-control input{
+            background-color: transparent;
+            border: 0;
+            border-bottom: 2px #fff solid;
+            display: block;
+            width: 100%;
+            padding: 15px 0;
+            font-size: 18px;
+            color: #fff;
+            position: relative;
+            z-index: 100;
+        }
+
+        .form-control input:focus,
+        .form-control input:valid{
+            outline: 0;
+        }
+        .form-control label{
+            position: absolute;
+            top: 15px;
+            left: 0;
+            pointer-events: none;
+        }
+         
+        .form-control label span{
+            display: inline-block;
+            font-size: 18px;
+            min-width: 5px;
+            transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .form-control input:focus + label span,
+        .form-control input:valid + label span{
+          transform: translateY(-30px)
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <h1>login form</h1>
+        <form>
+            <div class="form-control">
+                <input type="text" required>
+                <label><span>Email</span></label>
+            </div>
+
+            <div class="form-control">
+                <input type="password" required>
+                <label><span>Password</span></label>
+            </div>
+
+            <button class="btn">Login</button>
+
+            <p class="text">Don't have an account? <a href="#">Register</a></p>
+        </form>
+    </div>
+
+
+    <!-- javascript file -->
+     <script>
+        const label = document.querySelectorAll('.form-control label span')
+
+        label.forEach(label =>{
+            label.innerHTML = label.innerHTML
+            .split('')
+            .map((letter, idx) => `<span style="transition-delay: ${idx * 50}ms">${letter}</span>`)
+        .join('')})
+        
+
+     </script> 
+</body>
+</html>

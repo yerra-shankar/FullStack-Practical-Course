@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/boot.css">
+    <!-- <link rel="stylesheet" href="bootstrap/css/mdb.min.css"> -->
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <title>bootstrap</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <a href="#" class="navbar-brand m-2"> BS TABLE</a>
+        <h4 class="text-white me-3">Bootstrap and MDB</h4>
+    </nav>
+
+    <!-- ************ start Here************* -->
+
+
+    <div class="container mt-5">
+        <h1 class="display-3"><mark>Example of Tables</mark></h1>
+        <br>
+        <h2>Example of normal table(class="table")</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Sno</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Designation</th>
+                    <th scope="col">Company</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Johnn Doe</td>
+                    <td>40</td>
+                    <td>Project Manager</td>
+                    <td>Oracle</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Shankar Yerra</td>
+                    <td>22</td>
+                    <td>web developer</td>
+                    <td>amazon</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Siva kumar Yerra</td>
+                    <td>24</td>
+                    <td>ui/ux designer</td>
+                    <td>genpact</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Aswini kumar Yerra</td>
+                    <td>28</td>
+                    <td>java designer</td>
+                    <td>infosys</td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>santhosh Yerra</td>
+                    <td>27</td>
+                    <td>python designer</td>
+                    <td>Tech Mahindra</td>
+                </tr>
+
+            </tbody>
+        </table>
+        <br>
+        <hr>
+        <br>
+        <h1>Example of table-hover(class="table-hover")</h1>
+        <br>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Sno</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Designation</th>
+                    <th scope="col">Company</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Johnn Doe</td>
+                    <td>40</td>
+                    <td>Project Manager</td>
+                    <td>Oracle</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Shankar Yerra</td>
+                    <td>22</td>
+                    <td>web developer</td>
+                    <td>amazon</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Siva kumar Yerra</td>
+                    <td>24</td>
+                    <td>ui/ux designer</td>
+                    <td>genpact</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Aswini kumar Yerra</td>
+                    <td>28</td>
+                    <td>java designer</td>
+                    <td>infosys</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <hr>
+        <br>
+        <h1>Example of Table-bordered</h1>
+        <br>
+        <table class="table table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">Sno</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Designation</th>
+                    <th scope="col">Company</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Johnn Doe</td>
+                    <td>40</td>
+                    <td>Project Manager</td>
+                    <td>Oracle</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Shankar Yerra</td>
+                    <td>22</td>
+                    <td>web developer</td>
+                    <td>amazon</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Siva kumar Yerra</td>
+                    <td>24</td>
+                    <td>ui/ux designer</td>
+                    <td>genpact</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Aswini kumar Yerra</td>
+                    <td>28</td>
+                    <td>java designer</td>
+                    <td>infosys</td>
+                </tr>
+
+            </tbody>
+        </table>
+        <br>
+        <hr>
+        <br>
+        <h1>Example of border-color</h1>
+        <table class="table table-hover table-bordered border-primary">
+            <thead>
+                <tr>
+                    <th scope="col">Sno</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Designation</th>
+                    <th scope="col">Company</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Johnn Doe</td>
+                    <td>40</td>
+                    <td>Project Manager</td>
+                    <td>Oracle</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Shankar Yerra</td>
+                    <td>22</td>
+                    <td>web developer</td>
+                    <td>amazon</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Siva kumar Yerra</td>
+                    <td>24</td>
+                    <td>ui/ux designer</td>
+                    <td>genpact</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Aswini kumar Yerra</td>
+                    <td>28</td>
+                    <td>java designer</td>
+                    <td>infosys</td>
+                </tr>
+
+            </tbody>
+        </table>
+        <br>
+        <hr>
+        <br>
+        <h1>Example of table-borderless</h1>
+        <table class="table table-hover table-borderless">
+            <thead>
+                <tr>
+                    <th scope="col">Sno</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Designation</th>
+                    <th scope="col">Company</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Johnn Doe</td>
+                    <td>40</td>
+                    <td>Project Manager</td>
+                    <td>Oracle</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Shankar Yerra</td>
+                    <td>22</td>
+                    <td>web developer</td>
+                    <td>amazon</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Siva kumar Yerra</td>
+                    <td>24</td>
+                    <td>ui/ux designer</td>
+                    <td>genpact</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Aswini kumar Yerra</td>
+                    <td>28</td>
+                    <td>java designer</td>
+                    <td>infosys</td>
+                </tr>
+
+            </tbody>
+        </table>
+        <br>
+        <hr>
+        <br>
+        <h1>Example of table-colors</h1>
+        <table class="table table-hover table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">Sno</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Designation</th>
+                    <th scope="col">Company</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Johnn Doe</td>
+                    <td>40</td>
+                    <td>Project Manager</td>
+                    <td>Oracle</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Shankar Yerra</td>
+                    <td>22</td>
+                    <td>web developer</td>
+                    <td>amazon</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Siva kumar Yerra</td>
+                    <td>24</td>
+                    <td>ui/ux designer</td>
+                    <td>genpact</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Aswini kumar Yerra</td>
+                    <td>28</td>
+                    <td>java designer</td>
+                    <td>infosys</td>
+                </tr>
+
+            </tbody>
+        </table>
+        <br>
+        <table class="table table-hover table-primary">
+            <thead>
+                <tr>
+                    <th scope="col">Sno</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Designation</th>
+                    <th scope="col">Company</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Johnn Doe</td>
+                    <td>40</td>
+                    <td>Project Manager</td>
+                    <td>Oracle</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Shankar Yerra</td>
+                    <td>22</td>
+                    <td>web developer</td>
+                    <td>amazon</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Siva kumar Yerra</td>
+                    <td>24</td>
+                    <td>ui/ux designer</td>
+                    <td>genpact</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Aswini kumar Yerra</td>
+                    <td>28</td>
+                    <td>java designer</td>
+                    <td>infosys</td>
+                </tr>
+
+            </tbody>
+        </table>
+        <br>
+        <hr>
+        <br>
+        <h1>Example of variants colors</h1>
+        <table class="table table-hover table-bordered">
+            <thead class="table-danger">
+                <tr class="">
+                    <th scope="col">Sno</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Designation</th>
+                    <th scope="col">Company</th>
+                </tr>
+            </thead>
+            <tbody class="table-primary">
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Johnn Doe</td>
+                    <td>40</td>
+                    <td>Project Manager</td>
+                    <td>Oracle</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Shankar Yerra</td>
+                    <td>22</td>
+                    <td>web developer</td>
+                    <td>amazon</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Siva kumar Yerra</td>
+                    <td>24</td>
+                    <td>ui/ux designer</td>
+                    <td>genpact</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Aswini Yerra</td>
+                    <td>28</td>
+                    <td>java designer</td>
+                    <td>infosys</td>
+                </tr>
+
+            </tbody>
+        </table>
+        <br>
+        <h1>seperate colors of table</h1>
+        <table class="table table-hover table-bordered ">
+            <thead>
+                <tr class="table-danger text-uppercase">
+                    <th scope="col">Sno</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Designation</th>
+                    <th scope="col">Company</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-success">
+                    <th scope="row">1</th>
+                    <td>Johnn Doe</td>
+                    <td>40</td>
+                    <td>Project Manager</td>
+                    <td>Oracle</td>
+
+                </tr>
+                <tr class="table-warning">
+                    <th scope="row">2</th>
+                    <td>Shankar Yerra</td>
+                    <td>22</td>
+                    <td>web developer</td>
+                    <td>amazon</td>
+                </tr>
+                <tr class="table-primary">
+                    <th scope="row">3</th>
+                    <td>Siva kumar Yerra</td>
+                    <td>24</td>
+                    <td>ui/ux designer</td>
+                    <td>genpact</td>
+                </tr>
+                <tr class="table-info">
+                    <th scope="row">4</th>
+                    <td>Aswini kumar Yerra</td>
+                    <td>28</td>
+                    <td>java designer</td>
+                    <td>infosys</td>
+                </tr>
+
+            </tbody>
+        </table>
+        <br>
+        <hr>
+        <br>
+        <h1>Example of table-striped rows(default)</h1>
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Sno</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Designation</th>
+                    <th scope="col">Company</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Johnn Doe</td>
+                    <td>40</td>
+                    <td>Project Manager</td>
+                    <td>Oracle</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Shankar Yerra</td>
+                    <td>22</td>
+                    <td>web developer</td>
+                    <td>amazon</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Siva kumar Yerra</td>
+                    <td>24</td>
+                    <td>ui/ux designer</td>
+                    <td>genpact</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Aswini kumar Yerra</td>
+                    <td>28</td>
+                    <td>java designer</td>
+                    <td>infosys</td>
+                </tr>
+
+            </tbody>
+        </table>
+        <br>
+        <h1>Example of table-striped-columns</h1>
+        <table class="table table-bordered table-striped-columns">
+            <thead>
+                <tr>
+                    <th scope="col">Sno</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Designation</th>
+                    <th scope="col">Company</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Johnn Doe</td>
+                    <td>40</td>
+                    <td>Project Manager</td>
+                    <td>Oracle</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Shankar Yerra</td>
+                    <td>22</td>
+                    <td>web developer</td>
+                    <td>amazon</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Siva kumar Yerra</td>
+                    <td>24</td>
+                    <td>ui/ux designer</td>
+                    <td>genpact</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Aswini kumar Yerra</td>
+                    <td>28</td>
+                    <td>java designer</td>
+                    <td>infosys</td>
+                </tr>
+
+            </tbody>
+        </table>
+        <br>
+        <hr>
+        <br>
+        <h1>Example of table-active</h1>
+        <table class="table table-bordered ">
+            <thead>
+                <tr>
+                    <th scope="col">Sno</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Designation</th>
+                    <th scope="col">Company</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Johnn Doe</td>
+                    <td>40</td>
+                    <td>Project Manager</td>
+                    <td>Oracle</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Shankar Yerra</td>
+                    <td>22</td>
+                    <td class="table-active">web developer</td>
+                    <td>amazon</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Siva kumar Yerra</td>
+                    <td>24</td>
+                    <td>ui/ux designer</td>
+                    <td>genpact</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Aswini kumar Yerra</td>
+                    <td>28</td>
+                    <td>java designer</td>
+                    <td>infosys</td>
+                </tr>
+
+            </tbody>
+        </table>
+        <br>
+        <hr>
+        <h1>example of table-dividers</h1>
+        <br>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>@social</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+    <!-- *********** End Here *************** -->
+
+
+    <div style="margin-bottom: 500px;"></div>
+
+
+
+
+
+
+    <script src="bootstrap/js/boot.js"></script>
+    <script src="bootstrap/js/mdb.es.min.js"></script>
+</body>
+
+</html>

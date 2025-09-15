@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css table</title>
+    <style>
+        table{
+            width: 60%;
+            margin: 50px auto; 
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th{
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+        }
+
+        td{
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        tr:hover{
+            background-color: #f5f5f5;
+        }
+
+        tbody tr:nth-child(even){
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <theda>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+        </theda>
+
+        <tbody>
+            <tr>
+                <td>shankar</td>
+                <td>22</td>
+                <td>New York</td>
+            </tr>
+
+            <tr>
+                <td>siva</td>
+                <td>24</td>
+                <td>Los Angeles</td>
+            </tr>
+
+            <tr>
+                <td>santhosh</td>
+                <td>26</td>
+                <td>sydney</td>
+            </tr>
+
+            <tr>
+                <td>aswini</td>
+                <td>27</td>
+                <td>andhra pradesh</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

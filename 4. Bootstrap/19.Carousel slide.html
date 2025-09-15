@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/boot.css">
+    <!-- <link rel="stylesheet" href="bootstrap/css/mdb.min.css"> -->
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.0.0/mdb.min.css"
+  rel="stylesheet" 
+/>-->
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <title>bootstrap</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <a href="#" class="navbar-brand m-2"> BS Carousel slide</a>
+        <h4 class="text-white me-3">Bootstrap and MDB</h4>
+
+    </nav>
+
+    <!-- ************ start Here************* -->
+
+
+    <div class="container mt-5">
+        <h1 class="display-3"><mark>Example of Carousel slider</mark></h1>
+        <br>
+        <hr>
+        <br>
+        <h1>Example of default Carousel slider with rows</h1>
+        <div class="carousel slide" id="imageSlider">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/Bootstrap/dessertsphoto/burger.jpg" width="1400px" height="500px" alt="image-slide"
+                        class=" d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="/Bootstrap/dessertsphoto/fish.jpg" width="1400px" height="500px" alt="image-slide"
+                        class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="/Bootstrap/dessertsphoto/fruitshakes.jpg" width="1400px" height="500px" alt="image-slide"
+                        class="d-block w-100">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#imageSlider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#imageSlider" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h1>Example of autoplaying carousels(wait 5s and remove hover on image)</h1>
+        <br>
+        <div class="carousel slide" id="imageSlider1" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/Bootstrap/dessertsphoto/burger.jpg" width="1400px" height="500px" alt="image-slide"
+                        class=" d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="/Bootstrap/dessertsphoto/fish.jpg" width="1400px" height="500px" alt="image-slide"
+                        class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="/Bootstrap/dessertsphoto/fruitshakes.jpg" width="1400px" height="500px" alt="image-slide"
+                        class="d-block w-100">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#imageSlider1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#imageSlider1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h1> Change speed of image using javascript with autoplay</h1>
+        <div class="carousel slide" id="imageSlider2" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/Bootstrap/dessertsphoto/burger.jpg" width="1400px" height="500px" alt="image-slide"
+                        class=" d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="/Bootstrap/dessertsphoto/fish.jpg" width="1400px" height="500px" alt="image-slide"
+                        class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="/Bootstrap/dessertsphoto/fruitshakes.jpg" width="1400px" height="500px" alt="image-slide"
+                        class="d-block w-100">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#imageSlider2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#imageSlider2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
+
+
+        <br>
+
+        <hr>
+        <br>
+        <h1>Example of carousel slide with indicators</h1>
+        <div class="carousel slide" id="imageslider3">
+            <div class="carousel-indicators">
+                <button type="button " class="active" data-bs-target="#imageslider3" data-bs-slide-to="0"
+                    aria-current="true"></button>
+                <button type="button" data-bs-target="#imageslider3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#imageslider3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/Bootstrap/dessertsphoto/burger.jpg" width="1400px" height="500px" alt="image-1"
+                        class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="/Bootstrap/dessertsphoto/fish.jpg" width="1400px" height="500px" alt="image-2"
+                        class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="/Bootstrap/dessertsphoto/fruitshakes.jpg" width="1400px" height="500px" alt="image-3"
+                        class="d-block w-100">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#imageslider3" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#imageslider3" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <h1>Example of caption</h1>
+        <div class="carousel slide" id="imageslider4">
+            <div class="carousel-indicators">
+                <button type="button " class="active" data-bs-target="#imageslider4" data-bs-slide-to="0"
+                    aria-current="true"></button>
+                <button type="button" data-bs-target="#imageslider4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#imageslider4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/Bootstrap/dessertsphoto/burger.jpg" width="1400px" height="500px" alt="image-1"
+                        class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <P>Some representative placeholder content for the second slide</P>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat molestias magnam earum eum
+                            blanditiis maxime omnis nemo voluptas ipsam id?</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/Bootstrap/dessertsphoto/fish.jpg" width="1400px" height="500px" alt="image-2"
+                        class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <P>Some representative placeholder content for the second slide</P>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat molestias magnam earum eum
+                            blanditiis maxime omnis nemo voluptas ipsam id?</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/Bootstrap/dessertsphoto/fruitshakes.jpg" width="1400px" height="500px" alt="image-3"
+                        class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <P>Some representative placeholder content for the second slide</P>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat molestias magnam earum eum
+                            blanditiis maxime omnis nemo voluptas ipsam id?</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#imageslider4" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#imageslider4" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+
+        </div>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <h1>Example of individual carousel-item interval</h1>
+        <h5>img1-10s, img2-1s, img3-default</h5>
+        <div class="carousel slide" id="imageslider5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="/Bootstrap/dessertsphoto/burger.jpg" width="1400px" height="500px" alt="image-1"
+                        class="d-block w-100">
+                </div>
+                <div class="carousel-item" data-bs-interval="1000">
+                    <img src="/Bootstrap/dessertsphoto/fish.jpg" width="1400px" height="500px" alt="image-2"
+                        class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="/Bootstrap/dessertsphoto/fruitshakes.jpg" width="1400px" height="500px" alt="image-3"
+                        class="d-block w-100">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="imageslider5" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="imageslider5" data-bs-slide="next">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">next</span>
+            </button>
+        </div>
+
+
+
+    </div>
+
+    <!-- *********** End Here *************** -->
+
+
+    <div style="margin-bottom: 500px;"></div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.0.0/mdb.umd.min.js"></script> -->
+
+    <!-- <script src="bootstrap/js/boot.js"></script>
+  <script src="bootstrap/js/mdb.es.min.js"></script> -->
+
+    <script>
+        const myCarouselElement = document.querySelector('#imageSlider2')
+
+        const carousel = new bootstrap.Carousel(myCarouselElement, {
+            interval: 1000,
+            touch: true
+        })
+    </script>
+</body>
+
+</html>

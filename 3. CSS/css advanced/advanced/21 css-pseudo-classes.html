@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        header{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 35px;
+            background: linear-gradient(45deg, navy, darkgreen);
+            padding: 25px;
+            text-align: center;
+            color: white;
+
+        }
+        
+        section{
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            border: 2px solid black;
+            background-color:lightblue;
+            padding: 30px;
+            margin: 50px;
+            text-align: center;
+        }
+
+        /* :hover pseudo-classes */
+
+        .hover:hover{
+            color: red;
+        }
+
+        .hover1:hover{
+            color: blue;
+        }
+
+        /* :active pseudo-class */
+        a:active{
+            color: yellow;
+        }
+
+        h2.active,
+        h3.active1,
+        h4.active2{
+            color: red;
+        }
+
+        /* :visited pseudo-class */
+
+        a.visit:visited{
+            color: brown;
+        }
+
+        /* :lang pseudo-class */
+
+        p:lang(fr) {
+            font-family: verdana;
+            color: blue;
+        }
+
+        /* :focus pseudo-class */
+
+        input:focus{
+            border: 5px solid burlywood;
+            box-shadow: 10px 10px 10px black;
+            color: blue;
+            width: 300px;
+
+        }
+
+        /* :first-child pseudo-class */
+
+        b:first-child {
+            text-indent: 200px;
+            color: blue;
+        }
+
+        /* the simple tooltip hover */
+        h3.h3{
+            display: none;
+            background-color: red;
+            color: white;
+            padding: 20px;
+        }
+
+        div.div{
+            font-size: 40px;
+        }
+
+        div.div:hover .h3{
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+<!-- pseudo-classes -->
+    <header>
+    <h1>pseudo-classes</h1>
+    </header>
+
+    <section>
+        <h1>:hover pseudo-classes</h1>
+        <h2 class="hover">Hello world</h2>
+        <h3 class="hover1">this is an example of hover Pseudo-classes</h3>
+    </section>
+
+    <!-- :active pseudo-classes -->
+
+    <section>
+        <h1>:active pseudo-classes</h1>
+        <h2 class="active">Hello world</h2>
+        <h3 class="active1">the  :active pseudo class</h3>
+        <h4 class="active2">click the following link to see the effect</h4>
+        <a href="#">Click the link</a>
+    </section>
+
+    <!-- :visited pseudo-class -->
+
+    <section>
+        <h1>:visite pseudo-classes</h1>
+        <h2>Hello world</h2>
+        <h3>the  :visited pseudo class</h3>
+        <h4>click the following link to see the effect</h4>
+        <a class="visit" href="#">Click the link</a>
+    </section>
+
+    <!-- :lang pseudo-class -->
+
+    <section>
+        <h1>:lang pseudo-class</h1>
+        <p>Without :lang pseudo class</p>
+        <p lang="fr">with :lang pseudo class with the value</p>
+    </section>
+
+    <!-- :focus pseudo-class -->
+
+    <section>
+        <form>
+        <h1>:focus pseudo-class</h1>
+        <h2>Name: <input type="text" value="Enter your name"> </h2>
+        </form>
+    </section>
+
+    <!-- first-child pseudo-class -->
+
+    <section>
+        <h1>:first-child pseudo-class</h1>
+        <div>
+            <b>it is the first heading in div. it will be indented, and its color will be blue</b><br>
+            <b>it is the Second heading in div, which will not be affected.</b>
+        </div>
+    </section>
+
+    <!-- the simple tooltip hover -->
+
+    <section>
+        <h1>the simple tooltip hover</h1>
+        <h2>Move your mouse to the below text to see the effect</h2>
+        <div class="div">hello world
+            <h3 class="h3">welcome to the javatpoint</h3>
+        </div>
+    </section>
+</body>
+</html>

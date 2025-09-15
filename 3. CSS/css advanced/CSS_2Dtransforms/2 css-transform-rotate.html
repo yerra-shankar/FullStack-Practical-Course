@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform-rotate</title>
+    <style>
+        section{
+            font-family: sans-serif;
+            font-size: 20px;
+            border: 2px solid black;
+            background-color: beige;
+            text-align: center;
+            padding: 30px;
+            margin: 80px 50px 0px;
+        }
+        h2{
+            font-size: 40px;
+        }
+        /*--example of rotate(x,y) */
+        div{
+            width:300px;
+            height: 200px;
+            background-color: lightpink;
+            border: 1px solid black;
+            
+        }
+        div#mydiv{
+            -webkit-transform:rotate(0deg );
+            transform:rotate(0deg);
+        }
+        div#mydiv:hover{
+            transform: rotate(45deg);
+        }
+
+        /*--example of rotateX()--*/
+        div#mydiv2{
+            transform: rotateX(0deg);
+        }
+        div#mydiv2:hover{
+            transform: rotateX(45deg);
+        }
+
+        /*--example of rotateY()--*/
+        div#mydiv3{
+            transform:rotateY(0deg);
+        }
+        div#mydiv3:hover{
+            transform: rotateY(45deg);
+        }
+
+        /* example of rotateZ() */
+        div#mydiv4{
+            transform: rotateZ(0deg);
+        }
+
+        div#mydiv4:hover{
+            transform: rotateZ(90deg);
+        }
+
+    </style>
+    
+</head>
+<body>
+    <section>
+        <h2>example of rotate()</h2>
+        <div>This a normal div element</div>
+        <div id="mydiv">
+            This is the 45 degree clockwise rotated div element by using rotate() method.<br>
+        <b>move to cursor on me</b>
+        
+        </div>
+    </section>
+
+    <section>
+        <h2>example of rotateX()</h2>
+        <div id="mydiv2">
+            this is the 45deg rotated div element by using rotate(X) method.<br>
+        <b>move to cursor on me</b>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>example of rotateY()</h2>
+        <div id="mydiv3">
+            this is the 45deg rotated div element by using rotate(Y) method.<br>
+        <b>move to cursor on me</b>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>example of rotateZ()</h2>
+        <div id="mydiv4">
+            this is the 45deg rotateddiv element by using rotate(z) method.<br>
+            <b>move cursor on me</b>
+        </div>
+    </section>
+
+</body>
+</html>

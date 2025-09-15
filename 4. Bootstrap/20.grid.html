@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/boot.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.min.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.0.0/mdb.min.css"
+  rel="stylesheet" 
+/>-->
+
+    <title>bootstrap</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <a href="#" class="navbar-brand m-2"> BS Grid</a>
+        <h4 class="text-white me-3">Bootstrap and MDB</h4>
+
+    </nav>
+
+    <!-- ************ start Here************* -->
+
+
+    <div class="container mt-5">
+        <h1 class="display-3"><mark>Example of Grid</mark></h1>
+        <div class="row">
+            <div class=" col-sm-6 col-md-8 col-lg-4 col-xl-8 bg-primary text-white">
+                <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi voluptas ex doloremque
+                    exercitationem cum nemo reprehenderit rerum fugiat libero necessitatibus? ipsum dolor sit amet
+                    consectetur adipisicing elit. Facere, placeat consectetur? Dignissimos quidem dolor assumenda vel
+                    doloribus perspiciatis maxime quisquam aperiam</p>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-8 col-xl-4 bg-warning text-white">
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus iure quia nam
+                    provident consequatur repudiandae rem similique sapiente impedit nihil dolorem possimus nulla fugit,
+                    blanditiis officia cumque tenetur aliquid expedita?</p>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <h1>Example of nested Grid</h1>
+        <div class="row text-white">
+            <div class="col-md-4 bg-info">
+                <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores nemo id, corporis
+                    temporibus quo dicta placeat quis veritatis inventore nihil nesciunt ex voluptate ratione
+                    praesentium debitis cumque ut nisi beatae. Mollitia placeat id corporis beatae natus, obcaecati rem?
+                    Repellat, nesciunt?</p>
+            </div>
+            <div class="col-md-8 bg-secondary">
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, perspiciatis. Quia
+                    eius explicabo tempora libero alias impedit. Animi magnam, amet maxime corporis sapiente quis vitae
+                    accusamus ducimus aspernatur perspiciatis minima suscipit dolorum, recusandae nesciunt ullam quaerat
+                    perferendis fugit earum. Officiis!</p>
+                <div class="row">
+                    <div class="col-md-6 bg-danger">
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellat
+                            praesentium, tempora commodi dolorum, iste ipsum officiis pariatur libero porro quod numquam
+                            deserunt natus quisquam labore fuga nam suscipit delectus?</p>
+                    </div>
+                    <div class="col-md-6 bg-success">
+                        <div class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae debitis
+                            sapiente repellendus vitae, itaque repellat laudantium recusandae eius dolorum veritatis!
+                            ipsum dolor sit, amet consectetur adipisicing elit. Ullam numquam, dolor hic facere odit
+                            ipsam quasi harum
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 bg-primary">
+                                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
+                                    dolores maiores in, atq tenetur?</p>
+                            </div>
+                            <div class="col-md-6 bg-warning">
+                                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
+                                    perferendis commodi eos. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <h1>Example of equal-width</h1>
+        <div class="row text-center text-white">
+            <div class="col bg-danger">
+                auto-width
+            </div>
+            <div class="col bg-success">
+                auto-width
+            </div>
+        </div>
+        <br>
+        <div class="row text-center text-white">
+            <div class="col bg-primary">
+                auto-width
+            </div>
+            <div class="col bg-secondary">
+                auto-width
+            </div>
+            <div class="col bg-warning">
+                auto-width
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h1>Example of mix and match</h1>
+        <div class="container text-center text-white">
+            <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+            <div class="row">
+                <div class="col-md-8 bg-danger">.col-md-8</div>
+                <div class="col-6 col-md-4 bg-success">.col-6 .col-md-4</div>
+            </div>
+
+            <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+            <div class="row">
+                <div class="col-6 col-md-4 bg-primary">.col-6 .col-md-4</div>
+                <div class="col-6 col-md-4 bg-secondary">.col-6 .col-md-4</div>
+                <div class="col-6 col-md-4 bg-warning">.col-6 .col-md-4</div>
+            </div>
+
+            <!-- Columns are always 50% wide, on mobile and desktop -->
+            <div class="row">
+                <div class="col-6 bg-info">.col-6</div>
+                <div class="col-6 bg-dark">.col-6</div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+    <!-- *********** End Here *************** -->
+
+
+    <div style="margin-bottom: 500px;"></div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.0.0/mdb.umd.min.js"></script>
+
+    <!-- <script src="bootstrap/js/boot.js"></script>
+  <script src="bootstrap/js/mdb.es.min.js"></script> -->
+</body>
+
+</html>

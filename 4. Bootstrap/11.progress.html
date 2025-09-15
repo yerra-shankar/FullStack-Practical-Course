@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/boot.css">
+    <!-- <link rel="stylesheet" href="bootstrap/css/mdb.min.css"> -->
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <title>bootstrap</title>
+    <style>
+         .progress1 {
+            height: 50px;
+            border-radius: 50px;
+            box-shadow: 0px 5px 5px black;
+        }
+
+        .progress-bar1 {
+            border-radius: 50px;
+            font-size: 20px;
+        }
+    </style> 
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <a href="#" class="navbar-brand m-2"> BS Progress-Bars</a>
+        <h4 class="text-white me-3">Bootstrap and MDB</h4>
+
+    </nav>
+
+    <!-- ************ start Here************* -->
+
+
+    <div class="container mt-5">
+
+        <h1 class="dispaly-3"><mark>Example of Progress-bar</mark></h1>
+        <br>
+        <div class="progress mb-3" role="progressbar" aria-label="basic example" aria-valuenow="0" aria-valuemin="0"
+            aria-valuemax="100">
+            <div class="progress-bar" style="width:0%">0%</div>
+        </div>
+
+        <div class="progress mb-3" role="progressbar" aria-label="basic example" aria-valuenow="25" aria-valuemin="0"
+            aria-valuemax="100">
+            <div class="progress-bar" style="width:25%">25%</div>
+        </div>
+
+        <div class="progress mb-3" role="progressbar" aria-label="basic example" aria-valuenow="25" aria-valuemin="0">
+            <div class="progress-bar" style="width:50%">50%</div>
+        </div>
+
+        <div class="progress mb-3" role="progressbar" aria-label="basic example" aria-valuenow="25" aria-valuemin="0">
+            <div class="progress-bar" style="width:75%">75%</div>
+        </div>
+
+        <div class="progress mb-3" role="progressbar" aria-label="basic example" aria-valuenow="25" aria-valuemin="0">
+            <div class="progress-bar" style="width:100%">100%</div>
+        </div>
+        <hr>
+        <br>
+        <h1>width and height</h1>
+        <div class="progress mb-3" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0"
+            aria-valuemax="100">
+            <div class="progress-bar w-50"></div>
+        </div>
+
+        <div class="progress mb-3" role="progressbar" style="height:4px" aria-label="basic example" aria-valuenow="25"
+            aria-valuemin="0">
+            <div class="progress-bar" style="width:25%">25%</div>
+        </div>
+
+        <div class="progress mb-3" role="progressbar" style="height:40px" aria-label="basic example" aria-valuenow="25"
+            aria-valuemin="0">
+            <div class="progress-bar" style="width:25%">25%</div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <h1>Example of backgrounds color progress</h1>
+        <div class="progress mb-3" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0"
+            aria-valuemax="100">
+            <div class="progress-bar bg-primary" style="width:25%">25%</div>
+        </div>
+
+        <div class="progress mb-3" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0"
+            aria-valuemax="100">
+            <div class="progress-bar bg-success" style="width:50%">50%</div>
+        </div>
+
+        <div class="progress mb-3" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0"
+            aria-valuemax="100">
+            <div class="progress-bar bg-secondary" style="width:75%">75%</div>
+        </div>
+
+        <div class="progress mb-3" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0"
+            aria-valuemax="100">
+            <div class="progress-bar bg-info" style="width:100%">100%</div>
+        </div>
+
+        <div class="progress mb-3" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0"
+            aria-valuemax="100">
+            <div class="progress-bar bg-danger" style="width:75%">75%</div>
+        </div>
+        <div class="progress mb-3" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0"
+            aria-valuemax="100">
+            <div class="progress-bar bg-warning" style="width:50%">50%</div>
+        </div>
+        <div class="progress mb-3" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0"
+            aria-valuemax="100">
+            <div class="progress-bar bg-light" style="width:25%">25%</div>
+        </div>
+        <div class="progress mb-3" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0"
+            aria-valuemax="100">
+            <div class="progress-bar bg-dark" style="width:10%">10%</div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <h1>example of custom progress</h1>
+        <div class="progress mb-3 progress1" role="progressbar" aria-label="Success example" aria-valuenow="25"
+            aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar1 bg-danger" style="width:25%">25%</div>
+        </div>
+
+        <div class="progress mb-3 progress1" role="progressbar" aria-label="Success example" aria-valuenow="25"
+            aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar1 bg-warning" style="width:50%">50%</div>
+        </div>
+
+        <div class="progress mb-3 progress1" role="progressbar" aria-label="Success example" aria-valuenow="25"
+            aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar1 bg-success" style="width:75%">75%</div>
+        </div>
+
+        <div class="progress mb-3 progress1" role="progressbar" aria-label="Success example" aria-valuenow="25"
+            aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar1 bg-primary" style="width:100%">100%</div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h1>Example of multiple bars using progress-stacked</h1>
+        <div class="progress-stacked">
+            <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="15" aria-valuemin="0"
+                aria-valuemax="100" style="width: 15%">
+                <div class="progress-bar"></div>
+            </div>
+            <div class="progress" role="progressbar" aria-label="Segment two" aria-valuenow="30" aria-valuemin="0"
+                aria-valuemax="100" style="width: 30%">
+                <div class="progress-bar bg-warning"></div>
+            </div>
+            <div class="progress" role="progressbar" aria-label="Segment three" aria-valuenow="20" aria-valuemin="0"
+                aria-valuemax="100" style="width: 20%">
+                <div class="progress-bar bg-danger"></div>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h1>Example of progress-bar-striped</h1>
+        <div class="progress mb-4" role="progressbar" aria-label="Default striped example" aria-valuenow="10"
+            aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar progress-bar-striped" style="width:50%"></div>
+        </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <!-- *********** End Here *************** -->
+
+
+    <div style="margin-bottom: 500px;"></div>
+
+
+
+
+
+
+    <script src="bootstrap/js/boot.js"></script>
+    <script src="bootstrap/js/mdb.es.min.js"></script>
+</body>
+
+</html>

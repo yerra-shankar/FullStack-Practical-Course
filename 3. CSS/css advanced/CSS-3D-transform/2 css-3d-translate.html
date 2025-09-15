@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d translate</title>
+    <style>
+        /*--basic 3d translation example--*/
+        section{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            background-color: beige;
+            border: 2px solid black;
+            margin: 50px;
+        }
+
+        
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            transform: translate3d(0px, 0px, 0px);   /* original position */
+            transition: transform 1s ease;
+        }
+        .box:hover{
+            transform: translate3d(150px, 50px, 100px); /* x=150px y=50px z=100px */ 
+        }
+
+        /*--example of translate and perspective--*/
+
+        .container{
+            perspective: 1000px;
+            width: 200px;
+            height: 200px;
+        }
+        .cont{
+            width: 100px;
+            height: 100px;
+            background-color: #e74c3c;
+            transform: translate3d(0px, 0px 200px);
+            transition: transform 1s ease;
+        }
+        .cont:hover{
+            transform: translate3d(100px, 100px, 400px);
+        }
+
+        /*--example of rotation and translate--*/
+
+        .container1{
+            perspective: 1500px;
+            width: 300px;
+            height: 300px;
+        }
+
+        .cont1{
+            width: 100px;
+            height: 100px;
+            background-color: #9b59b6;
+            transform: translate3d(0,0,0) rotateX(0deg) rotateY(0deg);
+            transition: transform 1s ease;
+        }
+
+        .cont1:hover{
+            transform: translate3d(150px, 150px,200px) rotateX(45deg) rotateY(45deg);
+        }
+
+    </style>
+</head>
+<body>
+    
+    <section>
+        <h2>example of 3d translate(x,y,z)</h2>
+    <div class="box"></div>
+    </section>
+
+    <section>
+        <h2>example of translate with perspective</h2>
+        <div class="container">
+            <div class="cont"></div>
+        </div>
+    </section>
+
+    <section>
+        <h2>example of rotation and translate</h2>
+        <div class="container1">
+            <div class="cont1"></div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive grid</title>
+    <style>
+        body{
+            background-color: black;
+            
+        }
+        h1{
+            font-family: lucida calligraphy;
+            font-size: 40px;
+            background: linear-gradient(to right, brown,white);
+            background-clip: text;
+            color: transparent;
+            text-align: center;
+        }
+
+        h1::first-letter{
+            font-family: lucida calligraphy;
+            font-size: 2cm;
+            color:blue;
+            text-shadow: 5px 8px 9px skyblue;
+        }
+        .container {
+            font-family:  sans-serif;
+            background-color: black;
+            border: 3px solid gray;
+            padding: 30px;
+            display: grid;
+            gap: 5px;
+            margin: 14px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr 2fr 2fr 1fr;
+            grid-template-areas: 
+                "header header header"
+                "sidebar main  main"
+                "sidebar section content"
+                "footer footer footer";
+                
+        }
+        @media (max-width: 769px) {
+            .container {
+                grid-template-columns: 1fr;
+                grid-template-rows: 10% 30% 30% 10%;
+                grid-template-areas: 
+                     "header"
+                     "sidebar"
+                     "main"
+                     "section"
+                     "content"
+                     "footer";
+            }
+        }
+        .header{
+            grid-area: header;
+            background-color: rgba(255, 255, 0, 0.973);
+            color: black;
+            text-align: center;
+            padding: 20px;
+            font-size: 40px;
+        }
+
+        .sidebar{
+            grid-area: sidebar;
+            background-color: aquamarine;
+            color: black;
+            text-align: center;
+            font-size: 30px;
+            padding: 100px;
+        }
+
+        .main{
+            grid-area: main;
+            background-color: red;
+            color: black;
+            text-align: center;
+            font-size: 30px;
+            padding: 50px;
+        }
+
+        .section{
+            grid-area: section;
+            background-color: blueviolet;
+            color: black;
+            text-align: center;
+            font-size: 30px;
+            padding: 50px;
+        }
+
+        .content{
+            grid-area: content;
+            background-color:rgb(202, 85, 211);
+            color: black;
+            text-align: center;
+            font-size: 30px;
+            padding: 50px;
+
+        }
+
+        .footer{
+            grid-area: footer;
+            background-color:deepskyblue;
+            color: black;
+            text-align: center;
+            font-size: 40px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive Grid</h1>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="main">main</div>
+        <div class="section">Section</div>
+        <div class="content">Content</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

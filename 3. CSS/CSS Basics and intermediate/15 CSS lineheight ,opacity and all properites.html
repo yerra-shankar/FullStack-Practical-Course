@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        fieldset {
+            box-shadow: 0 0 50px black;
+        }
+
+        h1 {
+            margin: 50px 50px 50px 400px
+        }
+
+        h3.small {
+            line-height: 70%;
+        }
+
+        h3.big {
+            line-height: 300%;
+        }
+
+        .trans {
+            opacity: 0.3;
+        }
+
+        .now-space {
+            white-space: nowrap;
+        }
+        .test{width:11em;background-color: #00ffff; border: 1px solid #000000;padding:10px;word-wrap:break-word
+        }
+
+        body{
+            counter-reset: section;
+        }
+        
+        h2::before{
+            counter-increment: section;
+            content: "section" counter(section)":";
+        }
+        
+    </style>
+    <title>inline and opacity</title>
+</head>
+
+<body>
+    <fieldset>
+        <h1>css line height</h1>
+
+        <h3>
+            This is a heading with a standard line-height.<br>
+            This is a heading with a standard line- height.<br>
+            The default line height in most browser is about 110% to 120% <br>
+        </h3>
+        <h3 class="small">
+            This is a heading with a smaller line-height.<br>
+            This is a heading with a smaller line-height.<br>
+            This is a heading with a smaller line-height.<br>
+            This is a heading with a smaller line-height.<br>
+        </h3>
+        <h3 class="big">
+            This is a heading with a bigger line-height.<br>
+            This is a heading with a bigger line-height.<br>
+            This is a heading with a bigger line-height.<br>
+            This is a heading with a bigger line-height.<br>
+        </h3>
+    </fieldset>
+    <br />
+    <br />
+    <br />
+    <br />
+    <fieldset>
+        <h1>css opacity</h1>
+        <p>Normal image</p>
+        <img src="D:\shankarphotos\shankarphotos\IMG_20211206_201122-02.jpeg" alt="normal photo" height="300" width="200">
+        <p>transparent imaage</p>
+        <img class="trans" src="D:\shankarphotos\shankarphotos\IMG_20211206_201122-02.jpeg" alt="transparent image" height="300"
+            width="200">
+    </fieldset>
+    <br>
+    <br>
+    <br>
+    <br>
+    <fieldset>
+        <h1>white-space</h1>
+        <p>values : normal, nowrap, pre, pre-line, pre-wrap, initial, inherit</p>
+        <p class="now-space">
+            ex:-
+            write some text..write some text write some text.
+            write some text..write some text write some text.
+            write some text..write some text write some text.
+            write some text..write some text write some text.
+            write some text..write some text write some text.
+        </p>
+    </fieldset>
+    <br>
+    <br>
+    <br>
+    <fieldset>
+        <h1>CSS Word Wrap</h1>
+        <p class="test">In this paragraph, there is a very long word:
+            iamsooooooooooooooooooooooooooooooooooooooooooolongggggggggggggggggggg.the long word will break and wrap to the next line.
+        </p>
+    </fieldset>
+    <br>
+    <br>
+    <fieldset>
+        <h1>Example of Css Counters</h1>
+        <h2>java Tutorial</h2>
+        <h2>Html Tutorial</h2>
+        <h2>Css Tutorial</h2>
+        <h2>Oracle Tutorial</h2>
+    </fieldset>
+</body>
+
+</html>

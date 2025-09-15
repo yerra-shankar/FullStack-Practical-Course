@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltip animation</title>
+    <style>
+        section{
+            border: 2px solid black;
+            background-color: beige;
+            padding: 50px;
+            margin: 50px;
+        }
+
+        /*--animation tooltip--*/
+        .tooltip{
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+            cursor: pointer;
+        }
+        .tooltip .tooltiptext{
+            visibility: hidden;
+            width: 380px;
+            background-color: red;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -60px;
+
+            /*--fade in tooltip- takes 1 second to go from 0% to 100% opac: */
+            opacity:0;
+            transition:opacity 5s;
+        }
+        .tooltip:hover .tooltiptext{
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body style="text-align: center;font-family: sans-serif;font-size: 30px;">
+    <section>
+    <h2>Fade in tooltip Example</h2>
+    <p>Move your mouse cursor over the below heading</p>
+    <div class="tooltip">
+        <strong>Welcome to javaTpoint</strong>
+        <span class="tooltiptext">A solution of all technology</span>
+    </div>
+    </section>
+    
+</body>
+</html>

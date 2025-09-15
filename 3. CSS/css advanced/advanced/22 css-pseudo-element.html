@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-element</title>
+    <style>
+        h1.h1 {
+            font-family: Arial, sans-serif;
+            font-size: 50px;
+            background: linear-gradient(45deg, red, yellow, blue);
+            background-clip: text;
+            color: transparent;
+            text-align: center;
+        }
+
+        section {
+            font-family:Arial, sans-serif;
+            font-size: 25px;
+            border: 2px solid black;
+            background-color: lightskyblue;
+            text-align: center;
+            padding: 30px;
+            margin: 50px;
+        }
+
+        /* example of the ::first-letter pseudo-element */
+
+        h2.first-letter::first-letter {
+            font-family: Lucida Calligraphy;
+            font-size: 3cm;
+            color: red;
+            text-shadow: 5px 8px 9px green;
+        }
+
+        h3.first-letter {
+            color: blue;
+        }
+
+        /* example of the ::first-line pseudo-element */
+
+        h2.first-line::first-line{
+            font-family: lucida calligraphy;
+            font-size: 1cm;
+            color: red;
+            text-shadow: 5px 8px 9px green;
+        }
+
+        /* example of the ::before pseudo element */
+
+        h1.before::before{
+            content: "'Hello World.'";
+            color: red;
+        }
+
+        /* example of the ::after pseudo element */
+
+        h1.after::after{
+            content: "'Welcome to the javaTpoint.com.'";
+            color: red;
+        }
+
+        /* example of the ::selection pseudo element */
+
+        h1.selection::selection{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="h1">css pseudo-element</h1>
+    <!-- ::first-letter element example -->
+    <section>
+        <h2 class="first-letter">Welcome to the javaTpoint.com</h2>
+        <h3 class="first-letter">this is an example of ::first-letter element</h3>
+    </section>
+
+    <!-- ::first-line element example -->
+    <section>
+        <h2 class="first-line">Welcome to the javaTpoint.com. This site is developed so that students may learn computer
+            science related technologies easily. the javaTpoint.com is committed to provide easy and in-depth tutorials
+            on various technologies</h2>
+        <h3>This is an example of ::first-line pseudo-element</h3>
+    </section>
+
+    <!-- ::before pseudo-element -->
+     <section>
+        <h1 class="before">welcome to the javaTpoint</h1>
+        <h2>This is an example of ::before pseudo-element</h2>
+        <h3>in the first line the "Hello world " has added by using the pseudo-element ::before</h3>
+     </section>
+
+     <!-- ::after pseudo-element -->
+    <section>
+        <h1 class="after">Hello World.</h1>
+        <h3>This is an example of ::after pseudo-element.</h3>
+        <h3>In the first line the "welcome to the javaTpoint.com" how as added by using the pseudo-element ::after</h3>
+    </section>
+
+    <!-- ::selection pseudo-element-->
+     <section>
+        <h1 class="selection">Hello World</h1>
+        <h2>select the text in first line to see the effect.</h2>
+        <h3>this is an example of ::selection pseudo element.</h3>
+     </section>
+</body>
+
+</html>

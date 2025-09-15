@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/boot.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.min.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <title>bootstrap</title>
+    <style>
+        .breadcrumb1 {
+            background-color: lightskyblue;
+        }
+
+        .breadcrumb-item1+.breadcrumb-item1::before {
+            content: "=>"
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <a href="#" class="navbar-brand m-2"> BS Breadcrumb</a>
+        <h4 class="text-white me-3">Bootstrap and MDB</h4>
+  
+    </nav>
+
+    <!-- ************ start Here************* -->
+
+
+    <div class="container mt-5">
+
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                Home
+            </li>
+        </ol>
+
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="#">Home</a>
+            </li>
+            <li class="breadcrumb-item active">Library</li>
+        </ol>
+
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="#">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="#">Library</a>
+            </li>
+            <li class="breadcrumb-item">
+                Data
+            </li>
+        </ol>
+        <hr>
+        <br>
+        <h1><u>Custom styles on breadcrumb</u></h1>
+        <ol class="breadcrumb breadcrumb1">
+            <li class="breadcrumb-item breadcrumb-item1">Home</li>
+        </ol>
+
+        <ol class="breadcrumb breadcrumb1">
+            <li class="breadcrumb-item breadcrumb-item1">
+                <a href="#">Home</a>
+            </li>
+            <li class="breadcrumb-item breadcrumb-item1">Library</li>
+        </ol>
+
+        <ol class="breadcrumb breadcrumb1">
+            <li class="breadcrumb-item breadcrumb-item1">
+                <a href="#">Home</a>
+            </li>
+            <li class="breadcrumb-item breadcrumb-item1">
+                <a href="#">Library</a>
+            </li>
+            <li class="breadcrumb-item breadcrumb-item1">Data</li>
+        </ol>
+
+    </div>
+
+
+
+    <!-- *********** End Here *************** -->
+
+
+    <div style="margin-bottom: 500px;"></div>
+
+
+
+
+
+
+    <script src="bootstrap/js/boot.js"></script>
+    <script src="bootstrap/js/mdb.es.min.js"></script>
+</body>
+
+</html>

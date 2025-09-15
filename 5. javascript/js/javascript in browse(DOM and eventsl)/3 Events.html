@@ -1,0 +1,145 @@
+<!-- 
+    DOM Events:
+       HTMl DOM allows javascript to reacts to HTML events.
+       A Javascript can be executed when an event occurs, like when a user clicks on a html element
+       To execute code when a user clicks on an element, add javascript code to an HTML event attributes.
+
+    Common HTML Events
+
+    Here is a list of some common HTML events:
+
+    Mouse events:-
+
+       Events-                          Description-
+       onclick                            The user clicks an HTML element
+       onmouseover                        The user moves the mouse over an HTML element
+       onmouseout                         The user moves the mouse away from an html
+       onmousedown                         when the mouse button is pressed over the element
+       onmouseup                           when the mouse button is released over the element
+       onmousemove                          when the mouse movement takes place.
+
+    Keyboard events:
+
+        events-                         Description-
+        onKeydown & onKeyup             when the user press and then release the key
+
+
+    Form events:
+        
+        events-                          Description-
+        onfocus                          when the user focuses on an element
+        onsubmit                          when the user submits  the form
+        onblur                             when the focus is away from a form element
+        onchange                           when the user modifies or change the value of a form element
+
+
+     Window/Document events
+
+     events-                              Description
+
+     onload                               when the browser finishes the loading of the page
+     onunload                             when the visitor leaves the current webpage, the browser unloads it 
+     onresize                             when the visitor resizes the window of the browser
+     onreset                              when the window size is resized
+     onscroll                             when the visitor scrolls a scrollable area
+       
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body onload="window.alert('This is an example of onload event')">
+    <h2>JavaScript HTML Events</h2>
+    Enter your name: <input type="text" id="fname" onchange="upperCase()" placeholder="enter your name">
+    <p>When you leave the input field, a function is triggered which transforms the input text to upper case</p>
+
+    <script>
+        function upperCase(){
+            const x = document.getElementById("fname");
+            x.value = x.value.toUpperCase();
+        }
+    </script>
+
+
+<!-- onmouseover and onmouseout -->
+    <div onmouseover="mOver(this)"  onmouseout="mOut(this)"
+        style="background-color:red;width:120px;height:30px;padding:40px;margin-top: 50px;">
+       Mouse Over Me</div>
+
+    <script>
+        function mOver(obj) {
+            obj.innerHTML = "Thank You"
+            obj.style.backgroundColor = "green";
+        }
+
+        function mOut(obj) {
+            obj.innerHTML = "Mouse Over me";
+            obj.style.backgroundColor = "red";
+        }
+    </script>
+
+
+
+<!-- onmousedown and onmouseup -->
+
+    <div onmousedown="mDown(this)" onmouseup="mUp(this)"
+        style="background-color: black;color: white;width: 90px;height: 20px;padding: 40px;margin-top: 50px;">
+        Click Me</div>
+
+    <script>
+        function mUp(obj){
+            obj.style.backgroundColor= "blue";
+            obj.innerHTML = "Click me"
+            }
+        
+        function mDown(obj){
+            obj.style.backgroundColor="orange"
+            obj.innerHTML="Thank You"
+        }
+
+    </script>
+
+<script>
+
+    function clickevent(){
+            document.write("this is the example of onclick event")
+        }
+
+
+    function mouseoverevent(){
+        alert("This is example of onmouseover")
+    }
+
+    function focusevent(){
+        document.getElementById("input1").style.background="aqua"
+    }
+
+    function keydownevent(){
+        document.getElementById("input2")
+        alert("This is an example for keydown event")
+    }
+</script>
+
+    <!-- onClick event-->
+    <input type="button" onclick="clickevent()" value="Onclick" style="margin-top: 20px;"/>
+
+    <!-- onmouseover event -->
+    <p onmouseover="mouseoverevent()" style="margin-top: 30px;background-color: bisque;">Keep cursor on me</p>
+
+    <!-- Focus Event -->
+     <input type="text" id="input1" onfocus="focusevent()" placeholder="focus on me"/><br>
+
+
+     <!-- keydown event -->
+
+     <input type="text" id="input2" onkeydown="keydownevent()" style="margin-top: 30px;" placeholder="enter any thing"/>
+
+
+
+    
+    </body>
+</html>

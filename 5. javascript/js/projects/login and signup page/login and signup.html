@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login and signup page</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container active-login">
+        <!-- left side : welcome section -->
+         <div class="welcome-section">
+            <h1 class="welcome">Welcome!❤️</h1>
+            <p>Join our community and enjoy seamless access to exclusive features.</p>
+         </div>
+
+         <!-- Right side: forms -->
+        <div class="forms-container1">
+            <!-- login form -->
+             <div class="form-container login">
+                <h2>Login</h2>
+                <form>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="password" required>
+                    <button type="submit">Login</button>
+                </form>
+                <p>Don't have an account? <span class="switch-form">Sign Up</span></p>
+             </div>
+
+             <!-- signup form -->
+            
+            <div class="form-container signup">
+                <h2>Sign Up</h2>
+                <form>
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="password" required>
+                    <button type="submit">Register</button>
+                </form>
+                <p>Already have an account? <span class="switch-form">Login</span></p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- javascript -->
+     <script>
+        document.addEventListener('DOMContentLoaded',()=>{
+            const container = document.querySelector('.container');
+            const switchFormLinks = document.querySelectorAll('.switch-form');
+
+            switchFormLinks.forEach(link =>{
+                link.addEventListener('click' , () => {
+                    if (link.textContent === 'Sign Up'){
+                        container.classList.remove('active-login');
+                        container.classList.add('active-signup');
+                    }
+                    else{
+                        container.classList.remove('active-signup');
+                        container.classList.add('active-login');
+                    }
+                });
+            });
+        });
+     </script>
+</body>
+</html>

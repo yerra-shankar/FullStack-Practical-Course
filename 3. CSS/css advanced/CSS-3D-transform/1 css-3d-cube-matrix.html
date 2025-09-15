@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d matrix</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: black;
+        }
+        
+         .container {
+            perspective: 500px;
+         }
+        .cube{
+            width: 200px;
+            height: 200px;
+            background-color: #3498db;
+            position: relative;
+            transform-style: preserve-3d;
+            transform: rotateX(30deg) rotateY(30deg);
+            transition: transform 1s ease;
+        }
+        .cube:hover{
+            transform:rotate(60deg) rotateY(60deg);
+        }
+
+        .cube::before, .cube::after, .cube div{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: #2980b9;
+            opacity: 0.9;
+        }
+        .cube::before{
+            transform: rotateY(0deg) translateZ(100px);
+        }
+        .cube::after{
+            transform: rotateY(180deg) translateZ(100px);
+        }
+        .cube div:nth-child(1){
+            transform: rotateX(90deg) translateZ(100px);
+        }
+        .cube div:nth-child(2){
+            transform: rotateX(-90deg) translateZ(100px);
+        }
+        .cube div:nth-child(3){
+            transform: rotateY(90deg) translateZ(100px);
+        }
+        .cube div:nth-child(4){
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="cube">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        
+</body>
+</html>

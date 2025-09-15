@@ -1,0 +1,187 @@
+<!-- 
+    -- what is DOM 
+    -- document Object 
+    -- selecting element
+    -- what is child node and how to access
+
+1. DOM:-
+         When you open any webpage in a browser, the html of the page is loaded and rendered visually
+         on the screen.
+
+         To accomplish that, the browser builds the document object model of that page, which is an
+         object oriented model of its logical structure.
+
+         javascript can be used to manupulate the DOM of a page dynamically to add, delete and modify
+         elements.
+
+    DOM Tree:- 
+          The DOM represents a document as a tree structure.
+          HTML element become interrelated nodes in the tree.
+          All those nodes in the tree have some kind of relations among each other.
+          Nodes can have child nodes. Notes on the same tree level are called siblings.
+
+
+        it is important to understand the relationships between elements in an document in order to be
+        able to manipulate them with javscript.
+                                   document
+                                       |
+                                      html
+                            ___________|____________
+                            |                       |
+                            head                    body
+                            |                    _____|______
+                            title                |           |
+                                                <h1>         <a>   
+
+   
+ 2.  Document Object:
+             There is a predefined document object in javascript, which can be used to access all 
+             element on the DOM.
+
+
+             for example:
+  *                     document.body.innerHtml = "Some text"
+            
+        As body is an element of the DOM, we can access it using the document object and change the 
+        content of the innerHtml property.
+
+        The innerHTML property can be used on almost all HTML element to change its content. 
+
+
+
+3. selecting elements :-
+        All HTML elements are objects. And as we know every object has properties and methods . the document object has methods that allows
+         you to select the desired HTML element.
+
+          These are the methods most commonly used for selecting HTML and css elements:
+            
+          // finds elements by id
+    *   document.getElementByid(id)
+        
+         // find elements by having the given name value
+    *   document .getElementByName()
+      
+          //finds elements by class name 
+    *   document.getElementsByClassName(name)
+
+          //finds elements by tag name
+    *   document.getElementsByTagName(name)
+
+        // its returns the first element matching a css selector
+    *    document.querySelector(selector)
+
+        // its return all element matching a css selector
+    *   document.querySelectorAll(css selectors)
+
+
+
+   selecting elements :
+         The getElementByid methods is used to select the element with id="demo" and changes its content:
+           var elem = document.getElementByid("demo")
+           elem.innerHTML = "Hello World"
+
+        The getElementByClassName() method returns a collection of all element (in an array format) in the document with the specified
+        class name.
+            var arr = document.getElementsByClassName("demo")
+            arr[1].innerHTML = "Hi"; //accessing the second element 
+
+        similarly, the getElementsByTagName method returns all of the elements of the specified tag name as an array
+            var arr = document.getElementsByTagName("p")
+            arr[0].innerHTML = "Hi there";
+
+
+4. Working With DOM :
+         Each element in the DOM has a set of properties and methods that provides information about their relationship
+         in the DOM
+              element.childNodes----returns an array of an elements child nodes.
+              element.firstChild----returns the first child node of an element.
+              element.lastChild----returns the last child node of an element.
+              element.hasChildNodes----returns true if an element has any child nodes, otherwise false.
+              element.nextSibling-----returns the next node at the same tree level.
+              element.previousSibling-----returns the previous node at the same tree level.
+              element.parentNode-----returns the parent node of an element.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <h1>Welcome to js session</h1>
+</head>
+
+<body>
+    <div id="demo">
+        <h4>heading 4</h4>
+    </div>
+    <div id="display">
+        <p class="paragraph">Paragarph 1</p>
+        <p class="paragraph">Paragarph 2</p>
+        <p class="paragraph">Paragarph 3</p>
+        <button id="myButton">Click Me</button>
+    </div>
+
+    <script>
+        //  document object
+        //    document.body.innerHTML = "Some text";
+
+        // selecting element
+        // var ele = document.getElementById("demo")
+        // ele.innerHTML = "this is call by id"
+
+
+        // var arr = document.getElementsByClassName("paragraph")
+        // arr[2].innerHTML ="this is call by class"
+
+
+        //  var arr = document.getElementsByTagName("p")
+        //  arr[2].innerHTML ="this is call by Tag NAME"
+        //   Or
+        // var arr = document.getElementsByTagName("p")
+        // for (var x = 0; x < arr.length; x++)  {
+        //     arr[x].innerHTML = "Hi there this is call by tag name "
+        //  } 
+
+        /*
+           const button = document.querySelector('#myButton');
+   
+           button.addEventListener('click', () =>{
+               const paragraph = document.querySelector('.paragraph');
+               paragraph.textContent = 'this text has been changed!'
+           })
+       */
+
+       /*
+        const button = document.querySelector('#myButton');
+
+        button.addEventListener('click', () => {
+            const paragraphs = document.querySelectorAll('.paragraph'); // Get all paragraphs
+            for (let x = 0; x < paragraphs.length; x++) {
+                paragraphs[x].textContent = 'This text has been changed!';
+            }
+        });
+        */
+
+    //example 2
+        // const element = document.querySelectorAll('.paragraph')
+        // element.forEach((element) => {
+        //     element.style.color = 'red';
+        // });
+
+        /*
+          // working with dom
+          var a = document.getElementById("display")
+          var ary = a.childNodes;
+          for (var x = 0; x < ary.length; x++) {
+              ary[x].innerHTML = "new text this is call by child nodes"
+          }
+        */
+        // var a = document.getElementById("display")
+        // console.log(a.firstChild)
+    </script>
+</body>
+
+</html>

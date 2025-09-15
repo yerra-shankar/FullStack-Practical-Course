@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transforms-translate</title>
+    <style>
+        
+        section{
+            margin: 100px 50px 0px 0px;
+            border: 3px solid black;
+            padding-bottom: 100px;
+            background-color: beige;
+        }
+        h2{
+            background-color: aqua;
+            font-size: 40px;
+            text-align: center;
+        }
+        /*--example of translate(x,y) */
+        .translate{
+            width: 300px;
+            height: 70px;
+            background-color: lightgreen;
+            border: 1px solid black;
+            /* -webkit-transform: translate(0px,0px); */
+            transform: translate(0px,0px);
+            cursor: pointer;
+        }
+
+        .translate:hover{
+            transform: translate(100px,80px);
+        }
+        /*--example of translate(X)--*/
+        .translatex{
+            width: 300px;
+            height: 70px;
+            background-color: lightgreen;
+            border: 1px solid black;
+            /* -webkit-transform: translateX(0px); */
+            transform: translateX(0px);
+            cursor: pointer;
+            
+        }
+
+        .translatex:hover{
+            transform: translateX(100px);
+        }
+
+        /*--example of translate(Y)--*/
+        .translateY{
+            width: 300px;
+            height: 70px;
+            background-color: lightgreen;
+            border: 1px solid black;
+            -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+            cursor: pointer;
+        }
+        .translateY:hover{
+            transform: translateY(100px);
+        }
+        /* example of translateZ */
+        .translateZ{
+            width: 300px;
+            height: 70px;
+            background-color: lightgreen;
+            border: 1px solid black;
+            /* -webkit-transform:translateY(100px); */
+            transform: translateY(100px);
+            cursor: pointer;
+        }
+        .translateZ:hover{
+            transform: translateZ(100px);
+        }
+    
+    </style>
+</head>
+<body>
+    <section>
+     <h2>example of translate(x,y)</h2>
+    <div class="translate">
+        This div element is translated 100 pixes right, and 80 pixels down from its current position by using translate () method.<br>
+        <b>move to cursor on me</b>
+    </div>
+    </section>
+    
+
+    <section>
+        <h2>example of trnaslateX</h2>
+    <div class="translatex">
+        This div element is translated 100 pixes right. by using  translateX () method.<br>
+        <b>move to cursor on me</b>
+    </div>
+    </section>
+
+    <section>
+        <h2>example of translateY</h2>
+    <div class="translateY">
+        this div element is translated 100 pixes down .by using translateY ()method.<br>
+        <b>move to cursor on me</b>
+    </div>
+    </section>
+
+    <section>
+        <h2>example of translateZ</h2>
+    <div class="translateZ">
+        it specifies 3d translation, using only the value for the Z-axis.<br>
+        <b>move to cursor on me</b>
+    </div>
+    </section>
+</body>
+</html>

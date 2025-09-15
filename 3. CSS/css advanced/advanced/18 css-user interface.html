@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>user-interface</title>
+    <style>
+        h1 {
+            font-family: sans-serif;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        section {
+            font-family: sans-serif;
+            font-size: 25px;
+            border: 2px solid black;
+            background-color: beige;
+            margin: 30px;
+            padding: 50px;
+        }
+
+        h2 {
+            font-family: sans-serif;
+            font-size: 30px;
+            text-align: center;
+        }
+/* example of resize horizontal */
+        .horz {
+            border: 2px solid;
+            padding: 20px;
+            width: 300px;
+            resize: horizontal;
+            overflow: auto;
+        }
+/* example of resize vertical */
+        .vert {
+            border: 2px solid;
+            padding: 20px;
+            width: 300px;
+            resize: vertical;
+            overflow: auto;
+        }
+/* example of resize both */
+        .both {
+            border: 2px solid;
+            padding: 20px;
+            width: 300px;
+            resize: both;
+            overflow: auto;
+        }
+
+/* example of outline and offset */
+        .outline{
+            margin: 20px;
+            padding: 10px;
+            width: 300px; 
+            border: 2px solid black;
+            outline: 2px solid red;
+            outline-offset: 10px;
+        }
+
+        /* example of border box and content box */
+
+        #cb{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            padding: 40px;
+            border: 2px solid black;
+            /* by default box-sizing : border box */
+    
+        }
+        #bb{
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+            padding: 40px;
+            border: 2px solid black;
+            box-sizing: border-box;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>css3 resize property</h1>
+    <section>
+        <h2>example of resize : horizontal</h2>
+        <p><b>note:</b> Internet Explorer does not support the resize property.</p>
+        <div class="horz">this example specifies how to resize the width of a div element.this example specifies how to
+            resize the width of a div element.this example specifies how to resize the width of a div element.this
+            example specifies how to resize the width of a div element.this example specifies how to resize the width of
+            a div element</div>
+    </section>
+
+    <section>
+        <h2>example of resize : vertical</h2>
+        <p><b>note:</b> Internet explorer does not support the resize property.</p>
+        <div class="vert">this example specifies how to resize the height of a div element.this example specifies how to
+            resize the height of a div element.this example specifies how to resize the height of a div element.this
+            example specifies how to resize the height of a div element.this example specifies how to resize the height
+            of a div element.this example specifies how to resize the height of a div element.</div>
+    </section>
+
+    <section>
+        <h2>example of resize : both</h2>
+        <p><b>note:</b> Internet explorer does not support the resize property.</p>
+        <div class="both">this example specifies how to resize both the height and the width of this div element.this
+            example specifies how to resize both the height and the width of this div element.this example specifies how
+            to resize both the height and the width of this div element.this example specifies how to resize both the
+            height and the width of this div element.this example specifies how to resize both the height and the width
+            of this div element.</div>
+    </section>
+
+    <!-- example of outline and outline-offset -->
+    <h1>CSS3 Outline Offset</h1>
+    <section>
+    <h2>example of CSS3 Outline Offset</h2>
+    <p><b>note:</b>internet explorer does not support the outline-offset property</p>
+    <div class="outline">the exapmle specifies an outline 10px outside the border edge. the exapmle specifies an outline 10px
+    outside the border edge. the exapmle specifies an outline 10px outside the border edge.</div>
+    </section>
+
+    <!-- example of box sizing -->
+     <h1>CSS3 Box-sizing</h1>
+     <section>
+        <h2> css3 {box-sizing : border-box and content-box(by default)}</h2>
+          <div id="cb">content box</div><br>
+          <div id="bb">border-box</div>
+     </section>
+
+
+</body>
+
+</html>

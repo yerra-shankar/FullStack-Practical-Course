@@ -1,0 +1,108 @@
+<!-- 
+  BOM:-
+
+        The Browser Object Model (BOM) allows javaScript to "talk to" the browser.
+
+        The Browser Object Model (BOM) 
+        There are no offical standards for the Browser Object Model (BOM).
+
+        Since modern browsers have implemented (almost) the same methods and properties for javascript
+        interactivity, it is often referred to, as method and properties of the BOM.
+
+    
+
+    The window Object
+            
+        The window object is supported by all browsers. it represents the browser's window.
+
+        All global javascript object, functions, and variables automatically become members of the 
+        window object.
+
+        Global variables are properties of the window object.
+        Global functions are methods of the window object.
+
+        Even the document object (of the HTML DOM) is a property of the window object :
+                 
+               window.document.getElementByid("header");
+               is the same as:
+               document.getElementByid("header")
+
+
+
+    Window Size
+        
+        The properties can be used to determine the size of the browser window.
+         
+        Both properties return the sizes in pixels:
+
+
+            window.innerHeight----the inner height of the browser window (in pixels)
+            window.innerWidth-----the inner width of the browser window (in pixels)
+
+        The browser window (the browser viewport) is NOT including toolbar and scrolbars.
+
+
+      properties
+
+        window.screen   ---- the window.screen object conatins information about the user's screen.
+        window.location ---- the window.location object can be used to get the current page address (URL)
+                               and to redirect the browser to anew page.
+        window.history ---- the window.history object contains the browser history
+        history.back() ---- same as clicking back in the browser
+        history.forward() ---- same as clicking forward in the browser
+
+
+
+    javscript Cookies :
+          Cookies let you store user information in web pages.
+          Cookies are data, stored in small text files, on your computer.
+
+          when a web server has sent a web page to a browser, the connection is shut down, and the 
+          server forgets everything about the user.
+
+          Cookies were invented to solve the problem "how to remember information about the
+           user":
+           
+              when a user visits a web page, his/her name can be stored in a cookie.
+              Next time the user visits the page, the cookie "remembers" his/her name.+
+
+                
+ document.cookie -----javascript can create, read, and delete cookies with the document.cookie property
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM</title>
+</head>
+
+<body>
+
+    <h2>Javascript BOM</h2>
+
+    <p id="demo"></p>
+
+    <!-- <script>
+        document.getElementById("demo").innerHTML =
+             "Browser inner window width:" + window.innerWidth + "px<br>"+
+             "Browser inner window height:" + window.innerHeight + "px";
+    </script> -->
+
+    <!-- <script>
+        document.getElementById("demo").innerHTML =
+           "The full URL of this page is:<br>" + window.location.href;
+    </script>  -->
+
+    <!-- <script>
+        document.getElementById("demo").innerHTML =
+          "Screen width is " + screen .width + " height " + screen.height;
+    </script> -->
+
+    </body>
+
+</html>

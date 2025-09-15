@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/boot.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.min.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <title>bootstrap</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <a href="#" class="navbar-brand m-2"> BS Alerts</a>
+        <h4 class="text-white me-3">Bootstrap and MDB</h4>
+
+    </nav>
+
+    <!-- ************ start Here************* -->
+
+
+    <div class="container mt-5">
+        <h3>example of alerts</h3>
+        <p>There are some standard colors on bootstrap</p>
+        <ul>
+            <li>primary----- blue color</li>
+            <li>info-------- light blue</li>
+            <li>secondary---- gray</li>
+            <li>success------ green</li>
+            <li>warning------ orange</li>
+            <li>danger-------  red</li>
+            <li>dark--------  black</li>
+            <li>white-------  white</li>
+            <li>light-------  light gray</li>
+        </ul>
+        <p>And how its use<marK>(class="alert alert-primary")</marK></p>
+        <hr>
+
+
+        <div class="alert alert-primary" >
+            <span class="h3">Congratulation!!</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quisquam facere quod accusantium rerum quo aliquam hic iste cum fugit natus, alias inventore odio quasi excepturi laborum, aut accusamus repellendus!</p>
+            <b>example of (class="alert alert-primary")</b>
+        </div>
+        <div class="alert alert-info">
+            <span class="h3"> Congratulation!!</span>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa a rem molestiae, consequuntur nihil, consequatur dolorum esse ad aspernatur, dolores eveniet magni sint eum commodi inventore cumque quas enim dolorem?</P>
+            <b>example of (class="alert alert-info")</b>
+        </div>
+        <div class="alert alert-secondary">
+            <span class="h3">Congratulation!!</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem tempora dolorem molestias sint dolore recusandae aperiam aliquam quae minus nam, atque quaerat id animi, quisquam magni facilis accusantium nihil ipsum!</p>
+            <b>example of (class="alert alert-secondary")</b>
+        </div>
+        <div class="alert alert-success">
+            <span class="h3"> Congratulation!!</span>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis at architecto suscipit molestias deserunt magni reprehenderit? Odio placeat minima, voluptate officiis explicabo totam! Quidem, explicabo! Sunt assumenda cum nobis ad.</p>
+            <b>example of (class="alert alert-success")</b>
+        </div>
+        <div class="alert alert-warning">
+            <span class="h3">Congratulation!!</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta amet dolore laudantium tenetur, a culpa est ex magni deserunt. Eveniet reiciendis cum quis officia iste deleniti vel excepturi a repudiandae.</p>
+            <b>example of (class="alert alert-warning")</b>
+        </div>
+        <div class="alert alert-danger">
+            <span class="h3">Something went wrong!!</span>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias natus eius dignissimos voluptatem officia! Iste nihil provident facere amet consequatur! Amet maxime veniam culpa nisi fugiat eius, neque nesciunt corrupti.</p>
+            <b>example of (class="alert alert-danger")</b>
+        </div>
+        <div class="alert alert-dark">
+            <span class="h3">Congratulation!!</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus non iste blanditiis? Libero, cupiditate, nisi esse nihil dignissimos ea amet eos iusto quis quisquam blanditiis error nemo voluptatibus rerum quaerat.</p>
+            <b>example of (class="alert alert-dark")</b>
+        </div>
+        <div class="alert alert-white">
+            <span class="h3">Congratulation!!</span>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur earum laborum, architecto libero accusantium cupiditate dolorum officia quibusdam provident reprehenderit alias quas consequatur consectetur ipsam? Reprehenderit ullam quae quod sed?</p>
+            <b>example of (class="alert alert-white")</b>
+        </div>
+        <div class="alert alert-light">
+            <span class="h3">Congratulation</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti error ducimus, rerum ratione libero corporis quis dignissimos esse adipisci! Neque asperiores eligendi culpa officia! Dignissimos rem rerum quaerat ut accusantium?</p>
+            <b>example of (class="alert alert-light")</b>
+        </div>
+        <hr>
+        <br>
+        <br>
+        <h3>example of alert-links</h3>
+        <div class="alert alert-success ">
+            <span class="h3">Thanks for Signup!! please
+                <a href="#" class="alert-link">login</a> here</span>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit quos vitae quam mollitia assumenda, id, quo, aut voluptate modi fuga tempore eum officia consequuntur esse debitis a necessitatibus non! Adipisci.</p>
+            <b>example of alert-links using  (a href inside using class="alert-link")</b>
+        </div>
+        <hr>
+        <br>
+        <br>
+        <h2>example of <mark>Alert-dismissible</mark></h2>
+        <div class="alert alert-success alert-dismissible " role="alert">
+            <button class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            <span class="h3">Congratulation</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam qui voluptate enim nemo velit amet quam aspernatur voluptas atque, sapiente consequatur pariatur culpa, ea unde optio quibusdam necessitatibus non error?</p>
+        </div>
+        <hr>
+        <br>
+        <br>
+        <div id="liveAlertPlaceholder"></div>
+        <button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
+        
+
+
+    </div>
+
+
+    <!-- *********** End Here *************** -->
+
+
+    <div style="margin-bottom: 500px;"></div>
+
+
+
+
+    <script src="bootstrap/js/boot.js"></script>
+    <script src="bootstrap/js/mdb.es.min.js"></script>
+    <script>
+        const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+        const appendAlert = (message, type) =>{
+            const wrapper = document.createElement('div')
+            wrapper.innerHTML = [
+                `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+                    `<div>${message}</div>`,
+                    '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+                        '</div>'
+            ].join('')
+            alertPlaceholder.append(wrapper)
+        }
+
+        const alertTrigger = document.getElementById('liveAlertBtn')
+        if(alertTrigger) {
+            alertTrigger.addEventListener('click', ()=>{
+                appendAlert('Nice, you triggered this alert message!', 'success')
+            })
+        }
+    </script>
+</body>
+
+</html>

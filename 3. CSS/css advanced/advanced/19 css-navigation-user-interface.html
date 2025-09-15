@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigation user-interface</title>
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css> 
+
+
+
+>
+    <style>
+        /* resetting margin and padding  */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* body styling */
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* container to hold the navigation buttons */
+        .nav-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        /* styling for all directional buttons */
+
+        .nav-button{
+            display:inline-block;
+            background-color: #007bff;
+            color: white;
+            font-size: 18px;
+            padding: 20px;
+            border-radius: 50%;
+            margin: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease , transform 0.3s ease;
+        }
+
+        /* hover effect */
+        .nav-button:hover{
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+
+        /* icon style */
+        .nav-button i{
+            font-size: 24px;
+            line-height: 0;
+        }
+
+        /* Create up, down, left, right buttons using pseudo elements */
+        .nav-up i{
+            transform: rotate(0deg);
+        }
+
+        .nav-down i{
+            transform: rotate(180deg);
+        }
+        .nav-left i{
+            transform: rotate(270deg);
+        }
+        .nav-right i{
+            transform: rotate(90deg);
+        }
+    </style>
+</head>
+<body>
+        <!-- example of navigation interface with directional buttons-->
+        <h1>css navigation interface with direction</h1>
+        <section>
+           <div class="nav-container">
+               <!-- nav buttons -->
+               <div class="nav-button nav-up">
+                   <i class="fas fa -arrow-up"></i>
+               </div>
+   
+               <div class="nav-button nav-left">
+                   <i class="fas fa-arrow-left"></i>
+               </div>
+   
+               <div class="nav-button nav-right">
+                   <i class="fas fa-arrow-right"></i>
+               </div>
+           </div>
+        </section>
+</body>
+</html>

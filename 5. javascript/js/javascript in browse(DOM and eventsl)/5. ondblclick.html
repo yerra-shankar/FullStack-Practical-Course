@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+    javscript dblclick event
+    The dblclick event generates an event on double click the element. The event fires when an element is clicked 
+    twice in a very short span of time. We can also use the JavaScript's addEventListener() method to fire the 
+    double click event.
+
+    syntax:-
+       In html
+    <element ondblclick = "func()"
+
+    In javscript:
+    object.ondblclick = function(){myscript};
+
+    In javscript by using the addEventListener() method
+    object.addEvenListener("dblclick", myScript);
+
+
+
+
+    using ondblclick attributes in Html   -->
+
+    <h1 id="heading" ondblclick="func()">click me</h1>
+    <h2>Double Click the text "click me" to see the effect.</h2>
+    <p>This is an example of using the <b>ondblclick</b> attribute.</p>
+
+    <hr>
+
+    <!-- using javascript -->
+    <h1 id="heading1"> Hello world :):) </h1>
+    <h2> Double Click the text "Hello world" to see the effect. </h2>
+    <p> This is an example of creating the double click event using JavaScript. </p>
+
+    <hr>
+
+    <!-- using javscript addEventListener() method -->
+    <h1 id="heading2"> Hello world :):) </h1>
+    <h2> Double Click the text "Hello world" to see the effect. </h2>
+    <p> This is an example of creating the double click event using the <b> addEventListener() method </b>. </p>
+
+    <script>
+
+        function func() {
+            document.getElementById("heading").innerHTML = "This is an example of Ondblclick event"
+        }
+
+        // ondblclick event on javascript
+        document.getElementById("heading1").ondblclick = function () { func1() }
+        function func1() {
+            document.getElementById("heading1").innerHTML = "This is an example of Ondblclick on javascript"
+        }
+
+        // using javscript addEventListener() method
+        document.getElementById("heading2").addEventListener("dblclick", func2)
+        function func2(){
+            document.getElementById("heading2").innerHTML = "This is an example of dblclick event"
+        }
+    </script>
+
+</body>
+
+</html>
