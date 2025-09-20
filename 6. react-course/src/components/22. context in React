@@ -1,0 +1,21 @@
+  Context in React
+
+                             App Component
+                __________________|_________________________
+                |                 |                         |
+               (A)               (B)                       (C)
+                                  |                         |
+                                 (D)                       (E)
+                                                            |
+                                                           (F)
+    
+
+ Context :- Context provides a Way to pass data through the component tree without having to pass props 
+            down manually at every level.
+
+
+there are three steps for implementing Context
+1. Create the Context
+2. Provides a context value
+3. Consume the context value.
+    

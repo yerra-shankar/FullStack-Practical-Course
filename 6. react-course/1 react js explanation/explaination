@@ -1,0 +1,116 @@
+              
+                  React js:-
+
+1. What is React js
+--> React.js is an open-source javascript library that is used for building user interfaces specifically
+    for single-page applications.
+--> it's used for handling the view layer for web and mobile apps. React also allows us to create
+    reusable UI components.
+--> React was first created by jordan walke, a software engineer working for facebook.
+
+2. Why we use
+--> Component based Architecture.
+--> Use virtual DOM for fast rendering the virtual DOM provides a mechansim that abstracts manual DOM
+    manipulations away from the developer, helping us to write more predictable code. it does so by comparing two render trees to determine exactly what has changed, only updating what is necessary on the actual DOM.
+--> Easy to learn.
+
+
+   features:-
+ * easy to learn
+ * reausable Components
+ * Fast Rendering 
+ * SEO Friendly
+ * Strong community Support
+ * proficient Data binding 
+ * The Virtual DOM
+ * Great Developer Tools
+
+ prerequisites:-
+ * HTML
+ * CSS
+ * javascript
+ * modules,classes,Arrow Functions,Map,Filter
+
+
+
+____For Creating react app we need___
+ * node js
+ * npx create-react-app projectname---------to create app
+ * npm start----------------To Run application
+
+
+  create app we use
+ 1.Npx create -react-app-<project-name>
+
+ we can globally create a application using 
+
+Npm install create-react-app-g----globally to create app
+create-react-app<project-name>----To create app
+
+
+To start:-
+cd <project-name>
+npm start
+
+
+<!-- -----Components------
+* Components let you split the UI(user interface) into independent, reusable pieces, and think about
+  each piece in isolation.
+  Components are independent and reusable bits of code. they serve the same purpose as javascript functions, but work in isolation and return HTML. 
+
+
+  component code
+
+  javascript file                       App.js
+        |                                  |
+    components code                     APP component
+
+
+
+----component type---
+1. Stateless Functional  Components:
+
+  function Welcome(props) {
+    return<h1>Hello,{props.name}</h1>;
+  }
+
+
+2. stateful class component
+
+class welcome extends React.Component{
+    render(){
+        return<h1>Hello,{this.props.name}</h1>
+    }
+}
+
+
+1. functiomal component 
+
+   property  ---------   javascript ----------- html(jsx)
+   (props)                functions 
+
+
+
+2. class Component
+
+  properties  ---------- ES6 class -----------html(jsx)
+  (Props)                 (state)
+
+
+
+     functional component      vs            class component
+  1. Simple functions                      1. More feature rich.
+  2. Use Fun component as much             2. Maintain their own private
+     as possible                              date-sate
+  3. Absence of 'this' keyword.             3. Complex Ui logic
+  4. solution without using state           4. provide life cycle hooks
+  5. mainly responsible for the Ui.         5. stateful/smart/container.
+  6. stateless/dumb/presentational 
+
+-->
+
+
+
+
+
+
